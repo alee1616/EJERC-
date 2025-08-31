@@ -1,0 +1,14 @@
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\bin\Debug\net9.0\rep2.exe
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\bin\Debug\net9.0\rep2.deps.json
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\bin\Debug\net9.0\rep2.runtimeconfig.json
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\bin\Debug\net9.0\rep2.dll
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\bin\Debug\net9.0\rep2.pdb
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\obj\Debug\net9.0\rep2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\obj\Debug\net9.0\rep2.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\obj\Debug\net9.0\rep2.AssemblyInfo.cs
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\obj\Debug\net9.0\rep2.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\obj\Debug\net9.0\rep2.dll
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\obj\Debug\net9.0\refint\rep2.dll
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\obj\Debug\net9.0\rep2.pdb
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\obj\Debug\net9.0\rep2.genruntimeconfig.cache
+C:\Users\User\OneDrive\C#\ejercicio 4\rep2\obj\Debug\net9.0\ref\rep2.dll

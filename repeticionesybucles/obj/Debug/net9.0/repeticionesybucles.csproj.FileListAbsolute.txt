@@ -1,0 +1,14 @@
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\bin\Debug\net9.0\repeticionesybucles.exe
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\bin\Debug\net9.0\repeticionesybucles.deps.json
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\bin\Debug\net9.0\repeticionesybucles.runtimeconfig.json
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\bin\Debug\net9.0\repeticionesybucles.dll
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\bin\Debug\net9.0\repeticionesybucles.pdb
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\obj\Debug\net9.0\repeticionesybucles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\obj\Debug\net9.0\repeticionesybucles.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\obj\Debug\net9.0\repeticionesybucles.AssemblyInfo.cs
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\obj\Debug\net9.0\repeticionesybucles.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\obj\Debug\net9.0\repeticionesybucles.dll
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\obj\Debug\net9.0\refint\repeticionesybucles.dll
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\obj\Debug\net9.0\repeticionesybucles.pdb
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\obj\Debug\net9.0\repeticionesybucles.genruntimeconfig.cache
+C:\Users\User\OneDrive\C#\ejercicio 4\repeticionesybucles\obj\Debug\net9.0\ref\repeticionesybucles.dll
