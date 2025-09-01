@@ -14,3 +14,6 @@ for (i = 1; i <= 100; i++) // Bucle que itera desde 1 hasta 100
 }
 Console.WriteLine("La suma de los números pares es: " + sumapar); // Muestra la suma de los números pares
 Console.WriteLine("La suma de los números impares es: " + sumaimpar); // Muestra la suma de los números impares
+
+//if es una estructura condicional que permite ejecutar 
+//diferentes bloques de código según si una condición es verdadera o falsa.
