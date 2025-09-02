@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int edad = 17;
+
+int edad; // Se puede quitar el valor inicial aquí y solo dejar la declaración.
 // Se solicita al usuario que ingrese su edad
 Console.Write("Ingresa tu edad: ");
         
