@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio4S4\\ejercicio4S4.csproj": {}
+    "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio4s4\\ejercicio4S4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio4S4\\ejercicio4S4.csproj": {
+    "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio4s4\\ejercicio4S4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio4S4\\ejercicio4S4.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio4s4\\ejercicio4S4.csproj",
         "projectName": "ejercicio4S4",
-        "projectPath": "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio4S4\\ejercicio4S4.csproj",
+        "projectPath": "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio4s4\\ejercicio4S4.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio4S4\\obj\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio4s4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
