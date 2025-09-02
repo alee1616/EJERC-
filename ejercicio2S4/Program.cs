@@ -15,3 +15,5 @@ else
 // Se usó || (OR), lo cual hacía que la condición casi siempre fuera verdadera.
 // Debe usarse && (AND) para comprobar que la edad esté entre 18 y 65 al mismo tiempo.
 // Además, es recomendable agregar un else para el caso en que la edad no sea válida.
+// También se agregó una línea para solicitar al usuario que ingrese su edad,
+// mejorando la interacción del programa.
