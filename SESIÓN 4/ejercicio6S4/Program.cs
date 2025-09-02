@@ -8,7 +8,7 @@ Console.Write("Ingresa tu edad: ");
 edad = Convert.ToInt32(Console.ReadLine());
 
 
-if (edad >= 18)
+if (edad >= 18) // Condición para verificar si es mayor de edad
 {
     Console.WriteLine("Es mayor de edad.");
     Console.WriteLine("// Puede votar.// ");
