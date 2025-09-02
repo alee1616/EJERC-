@@ -51,7 +51,6 @@ class FerreteriaVentas // Control de ventas en una ferretería
         Console.WriteLine(">>> Total de ventas: C$" + totalVentas);// Mostrar total de ventas
 
         
-
-        Console.WriteLine("\n*** Gracias por usar el sistema de control de ventas.*** "); //
+        Console.WriteLine("\n*** Gracias por usar el sistema de control de ventas.*** "); // Mensaje de despedida
     }
 }
