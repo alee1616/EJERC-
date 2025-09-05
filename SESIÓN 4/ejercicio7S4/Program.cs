@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System;
+using System; // Importar el espacio de nombres System para usar la consola.
 
 class FerreteriaVentas // Control de ventas en una ferretería 
 {
