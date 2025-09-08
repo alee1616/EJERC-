@@ -42,12 +42,12 @@ class Ferreteria// Calculo de IVA
             Console.WriteLine($" ///Total a pagar: C${total:F2}");
         }
         // Capturamos errores de formato: el usuario ingresó letras o símbolos en lugar de números
-        catch (FormatException)
+        catch (FormatException) // Si el usuario ingresa algo que no se puede convertir a número
         {
             Console.WriteLine(" **** Entrada inválida. Use solo números (ej. 10 o 199.99).*** \n      **Intente de nuevo.** ");
         }
         // Capturamos errores de desbordamiento: el número es demasiado grande o pequeño para el tipo
-        catch (OverflowException)
+        catch (OverflowException) // Si el número es demasiado grande o pequeño para int o decimal
         {
             Console.WriteLine("Número demasiado grande o pequeño. Intente un valor razonable.");
         }
