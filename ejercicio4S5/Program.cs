@@ -109,7 +109,8 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
         }
 
         // Procedimiento para registrar un libro en la lista
-        static void RegistrarLibro()
+        static void RegistrarLibro() // el static para que sea accesible desde Main y otros métodos, el void porque no devuelve nada 
+        // void se usa cuando el método no necesita devolver ningún valor.
         {
             Console.WriteLine("\n**** Registro de Libro ****");
 
