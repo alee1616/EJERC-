@@ -126,7 +126,7 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
             // Validar que el autor no sea vacío
             Console.Write("Ingrese el autor del libro: ");// Mensaje para ingresar el autor
             string autor = Console.ReadLine(); //  lee la entrada del usuario
-            if (string.IsNullOrWhiteSpace(autor)) //    IsNullOrWhiteSpace verifica si la cadena es null, 
+            if (string.IsNullOrWhiteSpace(autor)) //IsNullOrWhiteSpace verifica si la cadena es null, 
                                                    //vacía o solo espacios en blanco para evitar entradas inválidas
             {
                 Console.WriteLine("El autor no puede estar vacío.");
@@ -149,6 +149,9 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
 
             // Filtrar los libros de ese autor
             List<Libro> encontrados = biblioteca.FindAll(libro => libro.Autor.Equals(autor, StringComparison.OrdinalIgnoreCase));
+            //Permite filtrar la lista de libros en una sola línea.
+            // La lambda libro => libro.Autor.Equals(...) hace el código más compacto.
+            // OrdinalIgnoreCase ignora mayúsculas/minúsculas para que la búsqueda sea más flexible.
             // con el findall se puede buscar en la lista todos los libros que coincidan con el argumento
             // el StringComparison.OrdinalIgnoreCase es para que no distinga entre mayúsculas y minúsculas
 
