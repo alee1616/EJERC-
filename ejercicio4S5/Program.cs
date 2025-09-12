@@ -22,8 +22,9 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
     {
         // Lista global de libros disponibles en la biblioteca
         static List<Libro> biblioteca = new List<Libro>(); // static para que sea accesible desde Main y otros métodos
-                                                           //con la clase del libro como tipo de dato el new se le pone a la lista para inicializarla y que no de error
-                                                           // Punto de entrada del programa
+        //con la clase del libro como tipo de dato el new se le pone a la lista para inicializarla y que no de error
+        // Punto de entrada del programa, acá se guarda solo libros y autores pero solo dentro de memoria RAM
+        // si se cierra el programa se pierde todo lo que se haya guardado
         static void Main(string[] args) // el string[] args es para recibir argumentos desde la línea de comandos
         {
             // Bucle principal del programa
@@ -77,9 +78,9 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
         {
             int opcion; // Variable para almacenar la opción
             bool valido = int.TryParse(Console.ReadLine(), out opcion); // Intenta convertir la entrada
-                                                                        // Si la conversión falla, TryParse devuelve false y opcion queda en 0
-                                                                        // El out indica que la variable opcion se pasará por referencia y se modificará dentro
-                                                                        // el bool valido es para saber si la conversión fue exitosa o no.
+            // Si la conversión falla, TryParse devuelve false y opcion queda en 0
+            // El out indica que la variable opcion se pasará por referencia y se modificará dentro
+            // el bool valido es para saber si la conversión fue exitosa o no.
 
 
             if (!valido) // usando el operador ! para negar la condición
@@ -106,9 +107,10 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
             }
 
             // Validar que el autor no sea vacío
-            Console.Write("Ingrese el autor del libro: ");
-            string autor = Console.ReadLine();
-            if (string.IsNullOrWhiteSpace(autor))
+            Console.Write("Ingrese el autor del libro: ");// Mensaje para ingresar el autor
+            string autor = Console.ReadLine(); //  lee la entrada del usuario
+            if (string.IsNullOrWhiteSpace(autor)) //    IsNullOrWhiteSpace verifica si la cadena es null, 
+                                                   //vacía o solo espacios en blanco para evitar entradas inválidas
             {
                 Console.WriteLine("El autor no puede estar vacío.");
                 return;
@@ -116,16 +118,16 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
 
             // Crear un objeto libro y agregarlo a la lista
             Libro nuevoLibro = new Libro { Titulo = titulo, Autor = autor };
-            biblioteca.Add(nuevoLibro);
+            biblioteca.Add(nuevoLibro); // Agrega el nuevo libro a la lista de la biblioteca
 
             Console.WriteLine("Libro registrado con éxito.");
         }
 
         // Procedimiento para buscar libros por autor
-        static void BuscarPorAutor()
+        static void BuscarPorAutor() // el static para que sea accesible desde Main y otros métodos, el void porque no devuelve nada
         {
             Console.WriteLine("\n/// Búsqueda por Autor ///");
-            Console.Write("Ingrese el nombre del autor: ");
+            Console.Write(">> Ingrese el nombre del autor: ");
             string autor = Console.ReadLine();
 
             // Filtrar los libros de ese autor
@@ -135,24 +137,24 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
 
 
             // Mostrar resultados
-            if (encontrados.Count > 0)
+            if (encontrados.Count > 0) // Si se encontraron libros, muestra los títulos, si no, indica que no hay resultados.
             {
-                Console.WriteLine($"\nLibros encontrados de {autor}:");
-                foreach (var libro in encontrados)
+                Console.WriteLine($"\n// Libros encontrados de {autor}:");
+                foreach (var libro in encontrados) // Recorre cada libro encontrado y muestra su título
                 {
-                    Console.WriteLine($"- {libro.Titulo}");
+                    Console.WriteLine($"- {libro.Titulo}"); // Muestra el título del libro
                 }
             }
-            else
+            else // Si no se encontraron libros, muestra un mensaje
             {
-                Console.WriteLine("No se encontraron libros de ese autor.");
+                Console.WriteLine(" >> No se encontraron libros de ese autor. <<");
             }
         }
 
         // Procedimiento para mostrar todos los libros registrados
         static void MostrarLibros()
         {
-            Console.WriteLine("\n--- Listado de Libros Disponibles ---");
+            Console.WriteLine("\n *** Listado de Libros Disponibles ***");
 
             if (biblioteca.Count == 0) // Si no hay libros en la lista
             {
@@ -160,9 +162,10 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
             }
             else // Si hay libros, los muestra todos
             {
-                foreach (var libro in biblioteca)
+                foreach (var libro in biblioteca) // Recorre cada libro en la lista, el var es para que el compilador infiera el tipo
+                // y no tener que escribir "Libro" explícitamente, el foreach es para recorrer todos los elementos de una colección.
                 {
-                    Console.WriteLine($"Título: {libro.Titulo} | Autor: {libro.Autor}");
+                    Console.WriteLine($"Título: {libro.Titulo} | Autor: {libro.Autor}"); // Muestra título y autor de cada libro
                 }
             }
         }
