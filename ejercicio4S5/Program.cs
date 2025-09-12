@@ -1,10 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
-﻿using System;  // Necesario para usar Console
+
+//Sistema de gestión de biblioteca: registrar libros, buscar por autor y mostrar listado
+//de títulos disponibles.
+
+using System;  // Necesario para usar Console
 using System.Collections.Generic; // Necesario para usar List<T>
 
-namespace BibliotecaEstructurada // Namespace para organizar el código
+namespace BibliotecaEstructurada // Namespace para organizar el código y evitar conflictos de nombres.
 {
-    // Clase Libro -> representa un libro en la biblioteca
+    // Clase Libro -> representa un libro en la biblioteca con título y autor.
     class Libro
     {
         public string Titulo { get; set; } //aca a string le ponemos public para que se pueda acceder desde otras clases 
@@ -60,7 +64,7 @@ namespace BibliotecaEstructurada // Namespace para organizar el código
         // Procedimiento que muestra el menú principal
         static void MostrarMenu() // static para que sea accesible desde Main
         {
-            Console.WriteLine("\n=== Sistema de Gestión de Biblioteca ===");
+            Console.WriteLine("\n//// Sistema de Gestión de Biblioteca ////");
             Console.WriteLine("1. Registrar libro");
             Console.WriteLine("2. Buscar por autor");
             Console.WriteLine("3. Mostrar listado de títulos disponibles");
