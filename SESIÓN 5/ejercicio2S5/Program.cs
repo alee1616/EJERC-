@@ -15,7 +15,8 @@ using System;
 //precioUnitario: "199.99“
 //Resultado esperado: “Entrada inválida. Use solo números (ej. 10).”
 
-class Ferreteria// Calculo de IVA
+class Ferreteria // Calculo de IVA
+
 {
     static void Main() // Punto de entrada del programa
     {
@@ -55,7 +56,7 @@ class Ferreteria// Calculo de IVA
             Console.WriteLine($" ///IVA (15%): C${iva:F2}");
             Console.WriteLine($" ///Total a pagar: C${total:F2}");
         }
-        // Capturamos errores de formato: el usuario ingresó letras o símbolos en lugar de números
+        // Capturamos errores de formato: el texto no es un número válido
         catch (FormatException) // Si el usuario ingresa algo que no se puede convertir a número
         // Ejemplo: "diez" o "12,34.56", el formatException es para errores de formato
         {
@@ -63,7 +64,7 @@ class Ferreteria// Calculo de IVA
         }
         // Capturamos errores de desbordamiento: el número es demasiado grande o pequeño para el tipo
         catch (OverflowException) // Si el número es demasiado grande o pequeño para int o decimal
-        // Ejemplo: ingresar 9999999999999999999999999
+        // Ejemplo: ingresar 9999999999999999999999999 y el overflowException es para errores de rango.
         {
             Console.WriteLine("Número demasiado grande o pequeño. Intente un valor razonable.");
         }
