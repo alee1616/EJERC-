@@ -24,13 +24,14 @@ namespace BibliotecaEstructurada // Namespace para organizar el código
         {
             // Bucle principal del programa
             int opcion;
-            do
+            do // Bucle para mostrar el menú y procesar opciones
             {
                 MostrarMenu(); // Procedimiento para mostrar opciones
                 opcion = LeerOpcion(); // Función para leer y validar la opción elegida
 
                 // Estructura de control para decidir la acción
-                switch (opcion)
+                switch (opcion) // switch es una estructura de control que permite seleccionar 
+                // entre múltiples opciones basadas en el valor de una variable (opcion)
                 {
                     case 1:
                         RegistrarLibro(); // Procedimiento para registrar un libro
@@ -50,12 +51,14 @@ namespace BibliotecaEstructurada // Namespace para organizar el código
                 }
 
             } while (opcion != 4); // Repite hasta que el usuario elija salir
+            // El do-while asegura que el menú se muestre al menos una vez y luego se repita
+            // hasta que la condición (opcion != 4) sea falsa, es decir, cuando el usuario elija la opción 4 para salir.
         }
 
         // -------------------- Procedimientos y Funciones --------------------
 
         // Procedimiento que muestra el menú principal
-        static void MostrarMenu()
+        static void MostrarMenu() // static para que sea accesible desde Main
         {
             Console.WriteLine("\n=== Sistema de Gestión de Biblioteca ===");
             Console.WriteLine("1. Registrar libro");
