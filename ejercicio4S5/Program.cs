@@ -179,7 +179,7 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
         }
 
         // Procedimiento para mostrar todos los libros registrados
-        static void MostrarLibros()
+        static void MostrarLibros() 
         {
             Console.WriteLine("\n *** Listado de Libros Disponibles ***");
 
