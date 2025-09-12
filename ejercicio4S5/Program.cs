@@ -2,6 +2,13 @@
 
 //Sistema de gestión de biblioteca: registrar libros, buscar por autor y mostrar listado
 //de títulos disponibles.
+//Subproblemas identificados:
+//1. Mostrar el menú de opciones.
+//2. Leer y validar la opción del usuario.
+//3. Registrar un libro (título y autor).
+//4. Buscar libros por autor.
+//5. Mostrar todos los libros registrados.
+//6. Salir del sistema.
 
 using System;  // Necesario para usar Console
 using System.Collections.Generic; // Necesario para usar List<T>
