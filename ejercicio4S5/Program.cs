@@ -77,6 +77,9 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
         {
             int opcion; // Variable para almacenar la opción
             bool valido = int.TryParse(Console.ReadLine(), out opcion); // Intenta convertir la entrada
+            // Si la conversión falla, TryParse devuelve false y opcion queda en 0
+            // El out indica que la variable opcion se pasará por referencia y se modificará dentro
+            
             if (!valido) // usando el operador ! para negar la condición
             {
                 opcion = -1; // Retorna un valor inválido para que el switch lo detecte
@@ -87,10 +90,10 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
         // Procedimiento para registrar un libro en la lista
         static void RegistrarLibro()
         {
-            Console.WriteLine("\n--- Registro de Libro ---");
+            Console.WriteLine("\n**** Registro de Libro ****");
 
             // Validar que el título no sea vacío
-            Console.Write("Ingrese el título del libro: ");
+            Console.Write(">>>> Ingrese el título del libro: ");
             string titulo = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(titulo)) // IsNullOrWhiteSpace verifica si la cadena es null, 
             //vacía o solo espacios en blanco para evitar entradas inválidas
