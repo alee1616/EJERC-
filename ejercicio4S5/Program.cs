@@ -90,10 +90,14 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
         static int LeerOpcion() //este int es porque devuelve un entero y con el mismo static para que sea accesible desde otros métodos
         {
             int opcion; // Variable para almacenar la opción
-            bool valido = int.TryParse(Console.ReadLine(), out opcion); // Intenta convertir la entrada
+            bool valido = int.TryParse(Console.ReadLine(), out opcion);
+            // Intenta convertir la entrada
             // Si la conversión falla, TryParse devuelve false y opcion queda en 0
             // El out indica que la variable opcion se pasará por referencia y se modificará dentro
             // el bool valido es para saber si la conversión fue exitosa o no.
+            // El int.TryParse(Console.ReadLine(), out opcion);
+            // Evita que el programa falle si el usuario ingresa texto en lugar de un número.
+            // Devuelve -1 cuando la entrada no es válida, permitiendo manejar el error con el switch.
 
 
             if (!valido) // usando el operador ! para negar la condición
@@ -157,6 +161,9 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
             {
                 Console.WriteLine($"\n// Libros encontrados de {autor}:");
                 foreach (var libro in encontrados) // Recorre cada libro encontrado y muestra su título
+                // Permite recorrer de manera sencilla toda la lista de libros encontrados.
+                // Es más práctico que un for cuando no necesitas controlar índices manualmente.
+                // Hace el código más legible y menos propenso a errores.
                 {
                     Console.WriteLine($"- {libro.Titulo}"); // Muestra el título del libro
                 }
