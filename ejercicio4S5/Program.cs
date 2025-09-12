@@ -77,14 +77,17 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
         {
             int opcion; // Variable para almacenar la opción
             bool valido = int.TryParse(Console.ReadLine(), out opcion); // Intenta convertir la entrada
-            // Si la conversión falla, TryParse devuelve false y opcion queda en 0
-            // El out indica que la variable opcion se pasará por referencia y se modificará dentro
-            
+                                                                        // Si la conversión falla, TryParse devuelve false y opcion queda en 0
+                                                                        // El out indica que la variable opcion se pasará por referencia y se modificará dentro
+                                                                        // el bool valido es para saber si la conversión fue exitosa o no.
+
+
             if (!valido) // usando el operador ! para negar la condición
             {
                 opcion = -1; // Retorna un valor inválido para que el switch lo detecte
+                // Si la conversión falla, se asigna -1 para que el switch lo maneje como opción no válida.
             }
-            return opcion; // si no retorna la opción válida
+            return opcion; // si no retorna la opción válida ingresada por el usuario
         }
 
         // Procedimiento para registrar un libro en la lista
@@ -121,7 +124,7 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
         // Procedimiento para buscar libros por autor
         static void BuscarPorAutor()
         {
-            Console.WriteLine("\n--- Búsqueda por Autor ---");
+            Console.WriteLine("\n/// Búsqueda por Autor ///");
             Console.Write("Ingrese el nombre del autor: ");
             string autor = Console.ReadLine();
 
@@ -151,11 +154,11 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
         {
             Console.WriteLine("\n--- Listado de Libros Disponibles ---");
 
-            if (biblioteca.Count == 0)
+            if (biblioteca.Count == 0) // Si no hay libros en la lista
             {
                 Console.WriteLine("No hay libros registrados en la biblioteca.");
             }
-            else
+            else // Si hay libros, los muestra todos
             {
                 foreach (var libro in biblioteca)
                 {
