@@ -1,5 +1,19 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+//Excepciones objetivo: FormatException y OverflowException
+//Contexto: En una ferretería (PVC conduit SCH40, accesorios), el cajero ingresa cantidades y precios desde teclado.
+//Problema real: Se pueden ingresar textos no numéricos o números fuera de rango.
+//Tareas
+//Pida cantidad (int) y precioUnitario (decimal).
+//Calcule 
+//subtotal = cantidad * precioUnitario, 
+//iva = 0.15m * subtotal, 
+//total = subtotal + iva.
+//Capture formato inválido y desbordes con mensajes útiles.
+//Entradas de ejemplo
+//cantidad: "diez“
+//precioUnitario: "199.99“
+//Resultado esperado: “Entrada inválida. Use solo números (ej. 10).”
 
 class Ferreteria// Calculo de IVA
 {
@@ -43,11 +57,13 @@ class Ferreteria// Calculo de IVA
         }
         // Capturamos errores de formato: el usuario ingresó letras o símbolos en lugar de números
         catch (FormatException) // Si el usuario ingresa algo que no se puede convertir a número
+        // Ejemplo: "diez" o "12,34.56", el formatException es para errores de formato
         {
             Console.WriteLine(" **** Entrada inválida. Use solo números (ej. 10 o 199.99).*** \n      **Intente de nuevo.** ");
         }
         // Capturamos errores de desbordamiento: el número es demasiado grande o pequeño para el tipo
         catch (OverflowException) // Si el número es demasiado grande o pequeño para int o decimal
+        // Ejemplo: ingresar 9999999999999999999999999
         {
             Console.WriteLine("Número demasiado grande o pequeño. Intente un valor razonable.");
         }
