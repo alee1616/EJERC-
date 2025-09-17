@@ -62,12 +62,14 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
                         break;
                 }
 
-            } while (opcion != 4); // Repite hasta que el usuario elija salir
+            } while (opcion != 4);
+            // Repite hasta que el usuario elija salir
             // El do-while asegura que el menú se muestre al menos una vez y luego se repita
             // hasta que la condición (opcion != 4) sea falsa, es decir, cuando el usuario elija la opción 4 para salir.
+            //Es más adecuado que un while normal en este caso, porque queremos que el menú se muestre al menos una vez.
         }
 
-        // -------------------- Procedimientos y Funciones --------------------
+        // -------- Procedimientos y Funciones ---------
 
         // Procedimiento que muestra el menú principal
         static void MostrarMenu() // static para que sea accesible desde Main
@@ -90,7 +92,7 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
             // el bool valido es para saber si la conversión fue exitosa o no.
 
 
-            if (!valido) // usando el operador ! para negar la condición
+            if (!valido) // usando el operador !(NOT lógico, negación) para negar la condición
             {
                 opcion = -1; // Retorna un valor inválido para que el switch lo detecte
                 // Si la conversión falla, se asigna -1 para que el switch lo maneje como opción no válida.
@@ -156,6 +158,8 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
             {
                 Console.WriteLine(" >> No se encontraron libros de ese autor. <<");
             }
+            // El Count es una propiedad que devuelve el número de elementos en la lista
+            // Si es mayor que 0, significa que se encontraron libros.
         }
 
         // Procedimiento para mostrar todos los libros registrados
@@ -174,6 +178,10 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
                 {
                     Console.WriteLine($"Título: {libro.Titulo} | Autor: {libro.Autor}"); // Muestra título y autor de cada libro
                 }
+                // foreach permite recorrer de manera sencilla toda la lista de libros encontrados.
+                //Es más práctico que un for cuando no necesitas controlar índices manualmente.
+                //Hace el código más legible y menos propenso a errores.
+                // El $ antes de la cadena permite insertar variables directamente en la cadena usando {}
             }
         }
     }
