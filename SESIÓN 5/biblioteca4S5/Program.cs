@@ -97,7 +97,11 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
                 opcion = -1; // Retorna un valor inválido para que el switch lo detecte
                 // Si la conversión falla, se asigna -1 para que el switch lo maneje como opción no válida.
             }
-            return opcion; // si no retorna la opción válida ingresada por el usuario
+            return opcion;
+            // si no retorna la opción válida ingresada por el usuario
+            //El if es para comprobar condiciones, y el return en este caso se usa como 
+            // un "atajo de salida" del método cuando algo está mal.
+            //Evita que se registren títulos o autores vacíos.
         }
 
         // Procedimiento para registrar un libro en la lista
@@ -133,7 +137,8 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
         }
 
         // Procedimiento para buscar libros por autor
-        static void BuscarPorAutor() // el static para que sea accesible desde Main y otros métodos, el void porque no devuelve nada
+        static void BuscarPorAutor() // el static para que sea accesible desde Main y otros métodos, 
+        // el void porque no devuelve nada
         {
             Console.WriteLine("\n/// Búsqueda por Autor ///");
             Console.Write(">> Ingrese el nombre del autor: ");
