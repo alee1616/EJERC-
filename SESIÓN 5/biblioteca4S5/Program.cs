@@ -70,7 +70,7 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
         }
 
         // -------- Procedimientos y Funciones ---------
-
+        // Subproblema 1: Procedimiento que muestra el menú principal
         // Procedimiento que muestra el menú principal
         static void MostrarMenu() // static para que sea accesible desde Main
         {
@@ -82,7 +82,7 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
             Console.Write("Seleccione una opción: ");
         }
 
-        // Función que lee la opción ingresada y valida que sea un número
+        //Subproblema 2: Función que lee la opción ingresada y valida que sea un número
         static int LeerOpcion() //este int es porque devuelve un entero y con el mismo static para que sea accesible desde otros métodos
         {
             int opcion; // Variable para almacenar la opción
@@ -104,7 +104,7 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
             //Evita que se registren títulos o autores vacíos.
         }
 
-        // Procedimiento para registrar un libro en la lista
+        //  Subproblema 3: Procedimiento para registrar un libro en la lista
         static void RegistrarLibro()
         {
             Console.WriteLine("\n**** Registro de Libro ****");
@@ -122,7 +122,7 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
             // Validar que el autor no sea vacío
             Console.Write("Ingrese el autor del libro: ");// Mensaje para ingresar el autor
             string autor = Console.ReadLine(); //  lee la entrada del usuario
-            if (string.IsNullOrWhiteSpace(autor)) //    IsNullOrWhiteSpace verifica si la cadena es null, 
+            if (string.IsNullOrWhiteSpace(autor)) // IsNullOrWhiteSpace verifica si la cadena es null, 
                                                    //vacía o solo espacios en blanco para evitar entradas inválidas
             {
                 Console.WriteLine("El autor no puede estar vacío.");
@@ -136,7 +136,7 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
             Console.WriteLine("Libro registrado con éxito.");
         }
 
-        // Procedimiento para buscar libros por autor
+        //  subproblema 4: Procedimiento para buscar libros por autor
         static void BuscarPorAutor() // el static para que sea accesible desde Main y otros métodos, 
         // el void porque no devuelve nada
         {
@@ -167,7 +167,7 @@ namespace BibliotecaEstructurada // Namespace para organizar el código y evitar
             // Si es mayor que 0, significa que se encontraron libros.
         }
 
-        // Procedimiento para mostrar todos los libros registrados
+        // Subproblema 5: Procedimiento para mostrar todos los libros registrados
         static void MostrarLibros()
         {
             Console.WriteLine("\n *** Listado de Libros Disponibles ***");
