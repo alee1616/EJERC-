@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\bin\Debug\net9.0\ejercicio6S7.exe
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\bin\Debug\net9.0\ejercicio6S7.deps.json
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\bin\Debug\net9.0\ejercicio6S7.runtimeconfig.json
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\bin\Debug\net9.0\ejercicio6S7.dll
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\bin\Debug\net9.0\ejercicio6S7.pdb
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\obj\Debug\net9.0\ejercicio6S7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\obj\Debug\net9.0\ejercicio6S7.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\obj\Debug\net9.0\ejercicio6S7.AssemblyInfo.cs
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\obj\Debug\net9.0\ejercicio6S7.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\obj\Debug\net9.0\ejercicio6S7.sourcelink.json
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\obj\Debug\net9.0\ejercicio6S7.dll
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\obj\Debug\net9.0\refint\ejercicio6S7.dll
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\obj\Debug\net9.0\ejercicio6S7.pdb
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\obj\Debug\net9.0\ejercicio6S7.genruntimeconfig.cache
+C:\Users\User\OneDrive\EJERC#\ejercicio6S7\obj\Debug\net9.0\ref\ejercicio6S7.dll
