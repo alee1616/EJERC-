@@ -1,8 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-//modificado para que los valores de los tres números se cambien 
-//dentro del método usando ref. Así, verás que los valores 
-//originales cambian después de llamar al método:
+// El resultado que se imprime en consola será el mismo 
+//que si no usaras ref. La diferencia es solo en cómo 
+//se pasan los parámetros internamente 
+//(por referencia en vez de por valor), pero la salida 
+//para el usuario no cambia.
+
 using System;
 
 class Program
@@ -11,21 +14,19 @@ class Program
     // Este método asigna el mayor a una variable pasada por referencia
     static void MostrarMayor(ref int a, ref int b, ref int c, ref int mayor)
     {
+        // Modificamos los valores
+        a += 10; // Suma 10 al primer número
+        b *= 2;  // Duplica el segundo número
+        c = 0;   // Asigna 0 al tercer número
+
+        // Calcula el mayor de los nuevos valores
         mayor = a;
         if (b > mayor) mayor = b;
         if (c > mayor) mayor = c;
-        Console.WriteLine($"El mayor es: {mayor}");
     }
 
     // Método con retorno, recibe parámetros por referencia
     // Este método calcula y devuelve el mayor
-    static int ObtenerMayor(ref int a, ref int b, ref int c)
-    {
-        int mayor = a;
-        if (b > mayor) mayor = b;
-        if (c > mayor) mayor = c;
-        return mayor;
-    }
 
     static void Main()
     {
