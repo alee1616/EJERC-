@@ -3,6 +3,7 @@
 //Ejercicio 2: Intercambiar valores (uso de ref)
 using System; // Importa el espacio de nombres System para usar la consola
 
+//no hay funciones solo procedimietos solo procedimientos
 class Program //   Define la clase principal del programa
 {
     //Tipo: procedimiento porque retorna void, con parametros por referencia (ref)
