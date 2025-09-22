@@ -8,6 +8,8 @@ using System;
 
 class Program
 {
+    //Función (con retorno): devuelve el valor → más flexible, puedes usarlo en cálculos, condiciones, etc.
+    //confirma que este ejercicio se resolvió solo con función.
     // Función que cuenta las vocales en una cadena de texto
     static int ContarVocales(string texto)
     // recibe un parámetro de tipo string y devuelve un entero
