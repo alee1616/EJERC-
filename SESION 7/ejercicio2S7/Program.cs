@@ -69,3 +69,5 @@ class Program //   Define la clase principal del programa
 
 //para pasarlo por valor se quita ref
 //y se quita ref en la llamada a la funcion 
+//se quita void y se pone int en el metodo
+//se agrega return x; return y; para devolver los valores intercambiados
