@@ -1,4 +1,6 @@
 ﻿
+//Determinar el mayor de tres números. Leer datos hasta que se digite le
+//número -99.
 using System; // Importa el espacio de nombres System para usar la consola y tipos de datos
 
 class Program // Define la clase principal del programa

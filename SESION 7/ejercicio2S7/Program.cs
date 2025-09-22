@@ -6,7 +6,8 @@ using System; // Importa el espacio de nombres System para usar la consola
 //no hay funciones solo procedimietos solo procedimientos
 class Program //   Define la clase principal del programa
 {
-    //Tipo: procedimiento porque retorna void, con parametros por referencia (ref)
+    //Tipo: procedimiento porque retorna void, con parametros por referencia (ref) ////////
+    // y tambien es un procedimiento porque no devuelve nada (void). ////
     //Uso: cuando necesitas modificar variables originales (intercambiar valores, actualizar contadores, etc.).
     //Parámetros: por referencia (ref int).
     static void Intercambiar(ref int x, ref int y)
@@ -65,3 +66,6 @@ class Program //   Define la clase principal del programa
 //2 Procedimientos en total:
 //Intercambiar → procedimiento con parámetros por referencia.
 //Main → procedimiento (sin parámetros).
+
+//para pasarlo por valor se quita ref
+//y se quita ref en la llamada a la funcion 

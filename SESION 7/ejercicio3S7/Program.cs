@@ -6,9 +6,9 @@ using System; // Se usa para acceder a funcionalidades básicas de C#, como Cons
 class Program // Define la clase principal del programa.
 {
     // Función principal, punto de entrada del programa.
-    //Es un procedimiento, porque retorna void y solo ejecuta instrucciones.
+    //Es un procedimiento, porque retorna void y solo ejecuta instrucciones. ////
     static void Main(string[] args)
-    //Parámetro: string[] args → se pasa por valor (es un arreglo, pero aquí no se modifica).
+    //Parámetro: string[] args → se pasa por valor (es un arreglo, pero aquí no se modifica). ////
     // Define el método Main que es el punto de inicio del programa.
     //Usamos string[] args para permitir argumentos desde la línea de comandos.
     // args es un arreglo de cadenas que puede contener argumentos 
@@ -63,6 +63,7 @@ class Program // Define la clase principal del programa.
 //Métodos usados:
 //1 Función → EsPar(int numero) (con retorno, parámetros por valor).
 //1 Procedimiento → Main(string[] args) (sin retorno).
+
 
 // }
 // return numero % 2 == 0;

@@ -4,7 +4,7 @@
 //texto ingresada por el usuario y devuelva la cantidad de vocales que
 //contiene.
 
-using System;
+using System; // Importa el espacio de nombres System para usar la consola y tipos de datos
 
 class Program
 {
@@ -12,7 +12,7 @@ class Program
     //confirma que este ejercicio se resolvió solo con función.
     // Función que cuenta las vocales en una cadena de texto
     static int ContarVocales(string texto)
-    //Tipo: función, porque devuelve un valor (int).
+    //Tipo: función, porque devuelve un valor (int). ////
     //Parámetro: por valor (texto se pasa como copia, no se modifica fuera de la función).
     // recibe un parámetro de tipo string y devuelve un entero
     // Ese seria un parametro por valor, ya que se pasa una copia del valor original a la función.
