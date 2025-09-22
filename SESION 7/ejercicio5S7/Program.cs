@@ -12,9 +12,13 @@ class Program
     //confirma que este ejercicio se resolvió solo con función.
     // Función que cuenta las vocales en una cadena de texto
     static int ContarVocales(string texto)
+    //Tipo: función, porque devuelve un valor (int).
+    //Parámetro: por valor (texto se pasa como copia, no se modifica fuera de la función).
     // recibe un parámetro de tipo string y devuelve un entero
     // Ese seria un parametro por valor, ya que se pasa una copia del valor original a la función.
     // el valor original siendo la cadena ingresada por el usuario.
+    //lo recibe por valor, ya que no se usa ref ni out.
+    // El tipo de retorno es int porque devuelve un número entero (la cantidad de vocales
     // Si se quisiera pasar por referencia se usaria la palabra reservada ref o out antes del tipo de dato
     // por ejemplo: 
     // static void ContarVocales(ref string texto)
@@ -33,8 +37,10 @@ class Program
             }
         }
         return contador;            // devuelve el total de vocales encontradas
-    } 
+    }
 
+    // Procedimiento (sin retorno): no devuelve valor → menos flexible, solo realiza acciones.
+    //confirma que este programa es con retorno (función).
     static void Main()  // Punto de entrada del programa para ejecutar la función de manera ordenada 
     {
         Console.Write("Ingrese una cadena de texto: ");
@@ -43,3 +49,6 @@ class Program
         Console.WriteLine($"La cantidad de vocales es: {cantidadVocales}"); // muestra el resultado en consola
     }
 }
+
+//un parametro es una variable que se declara en la definición de una función o procedimiento
+//y se utiliza para recibir valores cuando se llama a esa función o procedimiento.

@@ -3,13 +3,15 @@ using System; // Importa el espacio de nombres System para usar la consola y tip
 
 class Program // Define la clase principal del programa
 {
-	//confirma que este programa es con retorno (función).	
+	//confirma que este programa es con retorno (función). porque devuelve un valor (int).
 	//También confirma que los parámetros se pasan por valor (no usa ref)
 	//Tiene tipo de retorno int (ya no es void).
 	//Calcula el mayor dentro de la función.
 	//Usa return mayor; para devolver el valor al Main().
 	// Método con retorno, recibe parámetros por valor
 	// Este método calcula y devuelve el mayor
+	//Tipo: función, porque devuelve un valor (int). /////
+	//Parámetros: por valor (a, b, c se pasan como copia, no se modifican fuera de la función).
 	static int ObtenerMayor(int a, int b, int c)
 	// recibe tres parámetros de tipo entero
 	// y devuelve un entero (el mayor)
@@ -27,6 +29,9 @@ class Program // Define la clase principal del programa
 		return mayor;
 	}
 
+
+	//Tipo: procedimiento, porque retorna void.
+	//Parámetro: ninguno relevante en el flujo (el string[] args si lo tuviera sería por valor).
 	static void Main()
 	{
 		Console.WriteLine("//// Programa para determinar el mayor de tres números. \n >>> Ingresa -99 para salir.");
@@ -51,10 +56,10 @@ class Program // Define la clase principal del programa
 			// Los parámetros se pasan por valor
 			// También se pasa por valor
 			int mayor = ObtenerMayor(num1, num2, num3);
-            // llama al método y almacena el resultado
-            // muestra el mayor obtenido del método
+			// llama al método y almacena el resultado
+			// muestra el mayor obtenido del método
 
-            Console.WriteLine($"El mayor es: {mayor}");
+			Console.WriteLine($"El mayor es: {mayor}");
 
 			// Comentario: En ambos métodos, los parámetros se pasan por valor, es decir, se envía una copia de cada variable.
 			// Si los métodos modificaran los valores, los originales fuera del método no cambiarían.
