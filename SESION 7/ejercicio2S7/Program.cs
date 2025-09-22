@@ -36,3 +36,9 @@ class Program //   Define la clase principal del programa
         // Los valores de a y b deberían estar intercambiados
     }
 }
+// }
+// y = temp;
+// {
+// int temp = x;
+// static void Intercambiar(ref int x, ref int y)
+// x = y;
