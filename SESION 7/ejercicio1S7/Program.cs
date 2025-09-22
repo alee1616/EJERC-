@@ -1,9 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+//Ejercicio 1: Calcular el área de un triángulo
+
 using System; // Importa el espacio de nombres System para usar la consola
 
 class Program //   Define la clase principal del programa
 {
-    static double CalcularAreaTriangulo(double baseT, double altura) 
+    //1. Método con retorno y con parámetros por valor (función).
+    //Uso: cuando necesitas un cálculo que devuelva un resultado (área, promedio, etc.). no modifica variables.
+    static double CalcularAreaTriangulo(double baseT, double altura)
     //el static indica que el método pertenece a la clase Program y se puede llamar sin crear objetos.
     // double = tipo de dato de retorno (número con decimales).
     // Define un método que calcula el área de un triángulo
@@ -16,7 +21,10 @@ class Program //   Define la clase principal del programa
         // El tipo de retorno es double para permitir valores con decimales
     }
 
+    
     static void Main()
+    // es un procedimiento (void)
+    //Su tipo de retorno es void → no devuelve nada.
     // Punto de entrada del programa
     // Aquí se llama al método CalcularAreaTriangulo y se muestra el resultado
     // Se pueden cambiar los valores de base y altura para probar con diferentes triángulos
