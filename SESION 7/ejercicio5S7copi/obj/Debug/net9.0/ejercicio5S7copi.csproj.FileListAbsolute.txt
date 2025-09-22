@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\bin\Debug\net9.0\ejercicio5S7copi.exe
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\bin\Debug\net9.0\ejercicio5S7copi.deps.json
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\bin\Debug\net9.0\ejercicio5S7copi.runtimeconfig.json
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\bin\Debug\net9.0\ejercicio5S7copi.dll
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\bin\Debug\net9.0\ejercicio5S7copi.pdb
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\obj\Debug\net9.0\ejercicio5S7copi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\obj\Debug\net9.0\ejercicio5S7copi.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\obj\Debug\net9.0\ejercicio5S7copi.AssemblyInfo.cs
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\obj\Debug\net9.0\ejercicio5S7copi.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\obj\Debug\net9.0\ejercicio5S7copi.sourcelink.json
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\obj\Debug\net9.0\ejercicio5S7copi.dll
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\obj\Debug\net9.0\refint\ejercicio5S7copi.dll
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\obj\Debug\net9.0\ejercicio5S7copi.pdb
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\obj\Debug\net9.0\ejercicio5S7copi.genruntimeconfig.cache
+C:\Users\User\OneDrive\EJERC#\SESION 7\ejercicio5S7copi\obj\Debug\net9.0\ref\ejercicio5S7copi.dll

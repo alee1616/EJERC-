@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio5S7copi\\ejercicio5S7copi.csproj": {}
+    "C:\\Users\\User\\OneDrive\\EJERC#\\SESION 7\\ejercicio5S7copi\\ejercicio5S7copi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio5S7copi\\ejercicio5S7copi.csproj": {
+    "C:\\Users\\User\\OneDrive\\EJERC#\\SESION 7\\ejercicio5S7copi\\ejercicio5S7copi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio5S7copi\\ejercicio5S7copi.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\EJERC#\\SESION 7\\ejercicio5S7copi\\ejercicio5S7copi.csproj",
         "projectName": "ejercicio5S7copi",
-        "projectPath": "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio5S7copi\\ejercicio5S7copi.csproj",
+        "projectPath": "C:\\Users\\User\\OneDrive\\EJERC#\\SESION 7\\ejercicio5S7copi\\ejercicio5S7copi.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio5S7copi\\obj\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\EJERC#\\SESION 7\\ejercicio5S7copi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"

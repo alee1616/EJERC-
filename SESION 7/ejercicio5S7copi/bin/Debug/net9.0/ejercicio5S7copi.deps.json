@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ejercicio5S7copi/1.0.0": {
+        "runtime": {
+          "ejercicio5S7copi.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ejercicio5S7copi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
