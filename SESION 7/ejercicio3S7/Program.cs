@@ -1,10 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
 //Ejercicio 3: Validar si un número es par
 using System; // Se usa para acceder a funcionalidades básicas de C#, como Console.
 
 class Program // Define la clase principal del programa.
 {
     // Función principal, punto de entrada del programa.
+    //Es un procedimiento, porque retorna void y solo ejecuta instrucciones.
     static void Main(string[] args)
     // Define el método Main que es el punto de inicio del programa.
     //Usamos string[] args para permitir argumentos desde la línea de comandos.
@@ -31,7 +33,9 @@ class Program // Define la clase principal del programa.
         }
     }
 
+    // 1 función con parámetros por valor.
     // Subprograma que valida si un número es par.
+    //Es una función porque devuelve un valor (bool).
     static bool EsPar(int numero)
     // Define la función EsPar que recibe un entero y retorna un booleano.
     // static indica que la función pertenece a la clase y no a una instancia.
