@@ -8,10 +8,13 @@ class Program // Define la clase principal del programa.
     // Función principal, punto de entrada del programa.
     //Es un procedimiento, porque retorna void y solo ejecuta instrucciones.
     static void Main(string[] args)
+    //Parámetro: string[] args → se pasa por valor (es un arreglo, pero aquí no se modifica).
     // Define el método Main que es el punto de inicio del programa.
     //Usamos string[] args para permitir argumentos desde la línea de comandos.
     // args es un arreglo de cadenas que puede contener argumentos 
     // pasados al programa desde la línea de comandos.
+    //lo recibe por valor, ya que no se usa ref ni out.
+    // El tipo de retorno es void porque no devuelve ningún valor.
     {
         Console.WriteLine("Ingrese un número:"); // Solicita al usuario un número.
         int numero = int.Parse(Console.ReadLine());
@@ -36,10 +39,16 @@ class Program // Define la clase principal del programa.
     // 1 función con parámetros por valor.
     // Subprograma que valida si un número es par.
     //Es una función porque devuelve un valor (bool).
+    //Parámetro: por valor (se pasa una copia de numero, no se modifica el original).
+
     static bool EsPar(int numero)
     // Define la función EsPar que recibe un entero y retorna un booleano.
     // static indica que la función pertenece a la clase y no a una instancia.
     // bool indica que la función retorna un valor booleano (true o false).
+    //lo recibe por valor, ya que no se usa ref ni out.
+    // El parámetro numero es una copia del valor pasado a la función.
+    //lo recibe por valor, ya que no se usa ref ni out.
+    // El tipo de retorno es bool porque devuelve true o false.
     {
         return numero % 2 == 0;
         // Devuelve true si el número es divisible por 2, false si no.

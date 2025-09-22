@@ -6,6 +6,7 @@ using System; // Importa el espacio de nombres System para usar la consola
 
 class Program //   Define la clase principal del programa
 {
+    //Sus parámetros son por valor, porque no usaste ref ni out.
     //1. Método con retorno y con parámetros por valor (función).
     //Uso: cuando necesitas un cálculo que devuelva un resultado (área, promedio, etc.). no modifica variables.
     static double CalcularAreaTriangulo(double baseT, double altura)
@@ -21,7 +22,7 @@ class Program //   Define la clase principal del programa
         // El tipo de retorno es double para permitir valores con decimales
     }
 
-    
+
     static void Main()
     // es un procedimiento (void)
     //Su tipo de retorno es void → no devuelve nada.

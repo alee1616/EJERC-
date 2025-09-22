@@ -8,12 +8,15 @@ class Program //   Define la clase principal del programa
 {
     //Tipo: procedimiento porque retorna void, con parametros por referencia (ref)
     //Uso: cuando necesitas modificar variables originales (intercambiar valores, actualizar contadores, etc.).
+    //Parámetros: por referencia (ref int).
     static void Intercambiar(ref int x, ref int y)
     // Define un método que intercambia dos valores enteros usando referencias
     // Los parámetros se pasan por referencia con 'ref'
     // Esto permite modificar los valores originales
     // en lugar de trabajar con copias locales
     //lo que retorna es void porque no devuelve nada entonces es un procedimiento
+    //lo recibe por referencia, ya que usa ref
+    // El parámetro x es una referencia al entero original pasado al método
     {
         // Intercambia los valores de x e y usando una variable temporal
         // Al usar 'ref', los cambios afectan a las variables originales

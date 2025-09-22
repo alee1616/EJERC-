@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
 //Ejercicio 4: Calcular IVA y total a pagar
 using System; // Importa el espacio de nombres System para usar la consola y tipos de datos
 
@@ -14,6 +15,8 @@ class Program // Define la clase principal del programa
     // Esta función calcula el subtotal, el IVA y el total a pagar
     // según la cantidad de productos y el precio unitario proporcionados.
     // Muestra los resultados en la consola con dos decimales para el formato monetario
+    //lo recibe por valor, ya que no se usa ref ni out.
+    // Los parámetros cantidad y precioUnitario son copias de los valores originales
     {
         // Calcula el subtotal multiplicando la cantidad por el precio unitario
         // ya estaban, pero estaban desorganizados.
@@ -42,6 +45,7 @@ class Program // Define la clase principal del programa
     }
 
     // Función principal del programa
+    //Tipo: procedimiento, porque retorna void.
     static void Main(string[] args)
     // Método Main que se ejecuta al iniciar el programa
     // Solicita al usuario la cantidad de productos y el precio unitario
