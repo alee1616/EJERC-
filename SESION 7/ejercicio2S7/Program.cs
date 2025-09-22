@@ -19,36 +19,38 @@ class Program //   Define la clase principal del programa
         // fuera del método
         // Esto es útil para intercambiar valores sin necesidad de devolverlos
         // como en una función tradicional
-    {
-        int temp = x; // Almacena temporalmente el valor de x
-        x = y; // Asigna el valor de y a x
-        y = temp; // Asigna el valor temporal (original de x) a y
+        {
+            int temp = x; // Almacena temporalmente el valor de x
+            x = y; // Asigna el valor de y a x
+            y = temp; // Asigna el valor temporal (original de x) a y
+        }
+
+        //Tipo: procedimiento porque retorna void. y no contiene ningún parámetro
+        static void Main() // Punto de entrada del programa
+        {
+            int a = 3, b = 7;
+            // Declara e inicializa dos variables enteras
+            // Muestra los valores antes del intercambio
+            // Utiliza interpolación de cadenas para mostrar los valores
+            Console.WriteLine($"Antes: a={a}, b={b}");
+            // Llama al método Intercambiar pasando las variables por referencia
+            // Esto permite que los cambios realizados dentro del método
+            // afecten a las variables originales
+
+            Intercambiar(ref a, ref b);
+            // Muestra los valores después del intercambio
+            // Nuevamente, utiliza interpolación de cadenas para mostrar los valores
+            // Los valores de a y b deberían estar intercambiados
+
+            Console.WriteLine($"Después: a={a}, b={b}");
+            // Muestra los valores después del intercambio
+            // Nuevamente, utiliza interpolación de cadenas para mostrar los valores
+            // Los valores de a y b deberían estar intercambiados
+        }
+
     }
 
-    //Tipo: procedimiento porque retorna void. y no contiene ningún parámetro
-    static void Main() // Punto de entrada del programa
-    {
-        int a = 3, b = 7;
-        // Declara e inicializa dos variables enteras
-        // Muestra los valores antes del intercambio
-        // Utiliza interpolación de cadenas para mostrar los valores
-        Console.WriteLine($"Antes: a={a}, b={b}");
-        // Llama al método Intercambiar pasando las variables por referencia
-        // Esto permite que los cambios realizados dentro del método
-        // afecten a las variables originales
-
-        Intercambiar(ref a, ref b);
-        // Muestra los valores después del intercambio
-        // Nuevamente, utiliza interpolación de cadenas para mostrar los valores
-        // Los valores de a y b deberían estar intercambiados
-
-        Console.WriteLine($"Después: a={a}, b={b}");
-        // Muestra los valores después del intercambio
-        // Nuevamente, utiliza interpolación de cadenas para mostrar los valores
-        // Los valores de a y b deberían estar intercambiados
-    }
 }
-// }
 // y = temp;
 // {
 // int temp = x;
