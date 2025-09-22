@@ -27,7 +27,7 @@ class Program
         {       // c es el caracter actual en la iteración para comparar
             if (vocales.Contains(c)) // si encontramos vocales contenidas en donde va iterando c 
             {                        // las va a sumar al contador
-                contador++;
+                contador++; // incrementa el contador si el caracter es una vocal
             }
         }
         return contador;            // devuelve el total de vocales encontradas
