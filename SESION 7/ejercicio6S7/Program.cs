@@ -25,7 +25,10 @@ class Program // Define la clase principal del programa
 	// y el método devolvería un entero (el mayor),
 	// pero se modificaría directamente el valor original pasado al método.
 	{
-		int mayor = a;
+		int mayor = a; // asume que 'a' es el mayor inicialmente
+		// Compara 'b' con 'mayor' y actualiza si 'b' es mayor
+		// Compara 'c' con 'mayor' y actualiza si 'c' es mayor
+		// Finalmente, devuelve el mayor de los tres números
 		if (b > mayor) mayor = b;
 		if (c > mayor) mayor = c;
 		return mayor;
@@ -34,7 +37,8 @@ class Program // Define la clase principal del programa
 
 	//Tipo: procedimiento, porque retorna void.
 	//Parámetro: ninguno relevante en el flujo (el string[] args si lo tuviera sería por valor).
-	static void Main()
+	static void Main() // Punto de entrada del programa
+	// Método Main que se ejecuta al iniciar el programa.
 	{
 		Console.WriteLine("//// Programa para determinar el mayor de tres números. \n >>> Ingresa -99 para salir.");
 		while (true)
