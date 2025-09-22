@@ -47,6 +47,13 @@ class Program // Define la clase principal del programa.
     }
 }
 
+// }
+// return numero % 2 == 0;
+// static bool EsPar
+// {
+// (int numero)
+
+
 // Comentarios sobre el proceso de ordenamiento y solución del problema:
 //
 // 1. El problema original presentaba fragmentos de código desordenados:
