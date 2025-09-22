@@ -1,5 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-
 //Descripcion del porgrama: Desarrolla una función en C# que reciba como parámetro una cadena de
 //texto ingresada por el usuario y devuelva la cantidad de vocales que
 //contiene.
