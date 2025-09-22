@@ -51,6 +51,10 @@ class Program // Define la clase principal del programa.
     }
 }
 
+//Métodos usados:
+//1 Función → EsPar(int numero) (con retorno, parámetros por valor).
+//1 Procedimiento → Main(string[] args) (sin retorno).
+
 // }
 // return numero % 2 == 0;
 // static bool EsPar
