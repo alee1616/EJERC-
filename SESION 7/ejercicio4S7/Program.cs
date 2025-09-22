@@ -64,6 +64,24 @@ class Program // Define la clase principal del programa
 }
 
 /*
+// Ejercicio 4: Calcular el IVA del 15% y el total a pagar según la cantidad y el precio unitario de un producto.
+
+decimal iva = subtotal * 0.15m;
+Console.WriteLine($"IVA (15%): {iva}");
+Console.WriteLine($"Total a pagar: {totalF2}"); 
+
+static void CalcularIVATotal(decimal precioUnitario) 
+{
+    decimal cantidad;
+    Console.WriteLine($"Cantidad: {cantidad}");
+    Console.WriteLine($"Precio unitario: {precioUnitario}");
+    Console.WriteLine($"Subtotal: {subtotal}");
+    
+    decimal subtotal = cantidad * precioUnitario;
+}
+
+
+
 --- Organización y explicación ---
 
 1. Se creó la función 'CalcularIVAyTotal' que recibe la cantidad y el precio unitario.
