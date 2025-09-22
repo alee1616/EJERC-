@@ -3,7 +3,9 @@ using System; // Importa el espacio de nombres System para usar la consola
 
 class Program //   Define la clase principal del programa
 {
-    static double CalcularAreaTriangulo(double baseT, double altura)
+    static double CalcularAreaTriangulo(double baseT, double altura) 
+    //el static indica que el método pertenece a la clase Program y se puede llamar sin crear objetos.
+    // double = tipo de dato de retorno (número con decimales).
     // Define un método que calcula el área de un triángulo
     // Recibe la base y la altura como parámetros
     // Devuelve el área calculada
@@ -29,6 +31,17 @@ class Program //   Define la clase principal del programa
         // Fin del programa
     }
 }
+// }
+// (double baseT, double altura)
+// return (baseT * altura) / 2;
+// static double CalcularAreaTriangulo
+// {
+//lo que se cambio fue el nombre de la funcion y los parametros
+//se cambio de void a double    
+//se agrego return para devolver el valor calculado
+//se agrego el metodo Main para ejecutar la funcion y mostrar el resultado
+//se agrego el using System; para usar la consola
+//se agrego la clase Program para contener los metodos
 
 
 
