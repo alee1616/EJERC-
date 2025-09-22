@@ -3,45 +3,24 @@ using System; // Importa el espacio de nombres System para usar la consola y tip
 
 class Program // Define la clase principal del programa
 {
-	// Método sin retorno, recibe parámetros por valor
-	// Este método solo muestra el mayor en pantalla
-	static void MostrarMayor(int a, int b, int c)
-    // recibe tres parámetros de tipo entero
-    // y no devuelve ningún valor (void)
-    // Los parámetros se pasan por valor, es decir, se envía una copia de cada variable
-    //los int a, b, c son copias de los valores originales
-    // Si se quisiera pasar por referencia se usaria la palabra reservada ref o out antes del tipo de dato
-    // por ejemplo:
-    // static void MostrarMayor(ref int a, ref int b, ref int c)
-    // y el método no devolvería nada, ya que el tipo de retorno sería void,
-    // se modificaría directamente el valor original pasado al método.
-    {
-		int mayor = a;
-        // inicializa mayor con el valor de a 
-        // luego compara con b y c para encontrar el mayor
-        // si b es mayor que mayor, actualiza mayor
-        // si c es mayor que mayor, actualiza mayor
-        // finalmente muestra el mayor en consola
-        if (b > mayor) mayor = b;
-        // si b es mayor que mayor, actualiza mayor
-        if (c > mayor) mayor = c;
-        // si c es mayor que mayor, actualiza mayor
-		Console.WriteLine($"El mayor es: {mayor}"); // muestra el mayor en consola
-	}
-
+	//confirma que este programa es con retorno (función).	
+	//También confirma que los parámetros se pasan por valor (no usa ref)
+	//Tiene tipo de retorno int (ya no es void).
+	//Calcula el mayor dentro de la función.
+	//Usa return mayor; para devolver el valor al Main().
 	// Método con retorno, recibe parámetros por valor
 	// Este método calcula y devuelve el mayor
 	static int ObtenerMayor(int a, int b, int c)
-    // recibe tres parámetros de tipo entero
-    // y devuelve un entero (el mayor)
-    // Los parámetros se pasan por valor, es decir, se envía una copia de cada variable
-    //los int a, b, c son copias de los valores originales
-    // Si se quisiera pasar por referencia se usaria la palabra reservada ref o out antes del tipo de dato
-    // por ejemplo:
-    // static int ObtenerMayor(ref int a, ref int b, ref int c)
-    // y el método devolvería un entero (el mayor),
-    // pero se modificaría directamente el valor original pasado al método.
-    {
+	// recibe tres parámetros de tipo entero
+	// y devuelve un entero (el mayor)
+	// Los parámetros se pasan por valor, es decir, se envía una copia de cada variable
+	//los int a, b, c son copias de los valores originales
+	// Si se quisiera pasar por referencia se usaria la palabra reservada ref o out antes del tipo de dato
+	// por ejemplo:
+	// static int ObtenerMayor(ref int a, ref int b, ref int c)
+	// y el método devolvería un entero (el mayor),
+	// pero se modificaría directamente el valor original pasado al método.
+	{
 		int mayor = a;
 		if (b > mayor) mayor = b;
 		if (c > mayor) mayor = c;
@@ -68,11 +47,8 @@ class Program // Define la clase principal del programa
 			int num3 = Convert.ToInt32(Console.ReadLine());
 			if (num3 == -99) break; // si el usuario ingresa -99, sale del bucle
 
-			// Usando método sin retorno
-			// Se pasa por valor, solo se envía una copia de los números
-			MostrarMayor( num1, num2, num3);
-
-			// Usando método con retorno
+			// Llama al método y almacena el resultado
+			// Los parámetros se pasan por valor
 			// También se pasa por valor
 			int mayor = ObtenerMayor(num1, num2, num3);
             // llama al método y almacena el resultado
@@ -88,3 +64,4 @@ class Program // Define la clase principal del programa
 		Console.WriteLine("Programa finalizado.");
 	}
 }
+	

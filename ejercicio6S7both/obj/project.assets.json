@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\OneDrive\\EJERC#\\SESION 7\\ejercicio6S7\\ejercicio6S7.csproj",
-      "projectName": "ejercicio6S7",
-      "projectPath": "C:\\Users\\User\\OneDrive\\EJERC#\\SESION 7\\ejercicio6S7\\ejercicio6S7.csproj",
+      "projectUniqueName": "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio6S7both\\ejercicio6S7both.csproj",
+      "projectName": "ejercicio6S7both",
+      "projectPath": "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio6S7both\\ejercicio6S7both.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\OneDrive\\EJERC#\\SESION 7\\ejercicio6S7\\obj\\",
+      "outputPath": "C:\\Users\\User\\OneDrive\\EJERC#\\ejercicio6S7both\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"

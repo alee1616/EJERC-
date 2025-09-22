@@ -22,7 +22,7 @@ class Program
         // Calcula el mayor de los nuevos valores
         mayor = a;
         if (b > mayor) mayor = b;
-        if (c > mayor) mayor = c;
+        if (c > mayor) mayor = c; 
     }
 
     // Método con retorno, recibe parámetros por referencia
