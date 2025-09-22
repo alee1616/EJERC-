@@ -41,7 +41,7 @@ class Program // Define la clase principal del programa
 		{
 			// Leer primer número
 			Console.Write("Ingrese el primer número: ");
-			int num1 = Convert.ToInt32(Console.ReadLine());
+			int num1 = Convert.ToInt32(Console.ReadLine()); // convierte la entrada a entero
 			if (num1 == -99) break; // si el usuario ingresa -99, sale del bucle
 
 			// Leer segundo número
