@@ -8,6 +8,8 @@ class Program // Define la clase principal del programa
     // Parámetros: cantidad (int), precioUnitario (decimal)
     // Retorno: void (no retorna nada, solo muestra resultados en consola)
     static void CalcularIVAyTotal(int cantidad, decimal precioUnitario)
+    // static void para que no retorne nada y es static
+    // Lo que se cambio fue el nombre de la funcion y los parametros
     // Estaba mal puesta 
     // Esta función calcula el subtotal, el IVA y el total a pagar
     // según la cantidad de productos y el precio unitario proporcionados.
