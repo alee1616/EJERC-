@@ -9,11 +9,12 @@ using System;
 class Program
 {
     // Función que cuenta las vocales en una cadena de texto
-    static int ContarVocales(string texto) // recibe un parámetro de tipo string y devuelve un entero
-                                           // Ese seria un parametro por valor, ya que se pasa una copia del valor original a la función.
-                                           // el valor original siendo la cadena ingresada por el usuario.
-                                           // Si se quisiera pasar por referencia se usaria la palabra reservada ref o out antes del tipo de dato
-                                           // por ejemplo: 
+    static int ContarVocales(string texto)
+    // recibe un parámetro de tipo string y devuelve un entero
+    // Ese seria un parametro por valor, ya que se pasa una copia del valor original a la función.
+    // el valor original siendo la cadena ingresada por el usuario.
+    // Si se quisiera pasar por referencia se usaria la palabra reservada ref o out antes del tipo de dato
+    // por ejemplo: 
     // static void ContarVocales(ref string texto)
     // y la función no devolvería nada, ya que el tipo de retorno sería void,
     // se modificaría directamente el valor original pasado a la función.
