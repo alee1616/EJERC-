@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\obj\Debug\net9.0\ejercicio1S8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\obj\Debug\net9.0\ejercicio1S8.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\obj\Debug\net9.0\ejercicio1S8.AssemblyInfo.cs
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\obj\Debug\net9.0\ejercicio1S8.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\obj\Debug\net9.0\ejercicio1S8.sourcelink.json
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\bin\Debug\net9.0\ejercicio1S8.exe
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\bin\Debug\net9.0\ejercicio1S8.deps.json
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\bin\Debug\net9.0\ejercicio1S8.runtimeconfig.json
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\bin\Debug\net9.0\ejercicio1S8.dll
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\bin\Debug\net9.0\ejercicio1S8.pdb
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\obj\Debug\net9.0\ejercicio1S8.dll
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\obj\Debug\net9.0\refint\ejercicio1S8.dll
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\obj\Debug\net9.0\ejercicio1S8.pdb
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\obj\Debug\net9.0\ejercicio1S8.genruntimeconfig.cache
+C:\Users\User\OneDrive\EJERC#\ejercicio1S8\obj\Debug\net9.0\ref\ejercicio1S8.dll
