@@ -1,0 +1,14 @@
+C:\Users\junio\OneDrive\Escritorio\Marian\bin\Debug\net9.0\Marian.exe
+C:\Users\junio\OneDrive\Escritorio\Marian\bin\Debug\net9.0\Marian.deps.json
+C:\Users\junio\OneDrive\Escritorio\Marian\bin\Debug\net9.0\Marian.runtimeconfig.json
+C:\Users\junio\OneDrive\Escritorio\Marian\bin\Debug\net9.0\Marian.dll
+C:\Users\junio\OneDrive\Escritorio\Marian\bin\Debug\net9.0\Marian.pdb
+C:\Users\junio\OneDrive\Escritorio\Marian\obj\Debug\net9.0\Marian.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\junio\OneDrive\Escritorio\Marian\obj\Debug\net9.0\Marian.AssemblyInfoInputs.cache
+C:\Users\junio\OneDrive\Escritorio\Marian\obj\Debug\net9.0\Marian.AssemblyInfo.cs
+C:\Users\junio\OneDrive\Escritorio\Marian\obj\Debug\net9.0\Marian.csproj.CoreCompileInputs.cache
+C:\Users\junio\OneDrive\Escritorio\Marian\obj\Debug\net9.0\Marian.dll
+C:\Users\junio\OneDrive\Escritorio\Marian\obj\Debug\net9.0\refint\Marian.dll
+C:\Users\junio\OneDrive\Escritorio\Marian\obj\Debug\net9.0\Marian.pdb
+C:\Users\junio\OneDrive\Escritorio\Marian\obj\Debug\net9.0\Marian.genruntimeconfig.cache
+C:\Users\junio\OneDrive\Escritorio\Marian\obj\Debug\net9.0\ref\Marian.dll
