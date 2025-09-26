@@ -1,6 +1,6 @@
 using System;
 
-namespace Marian
+namespace evalucion
 {
     public static class Evaluacion7_SimuladorTiendaLinea
     {
