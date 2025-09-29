@@ -1,4 +1,6 @@
-﻿namespace EjemploClase
+﻿
+
+namespace EjemploClase
 {
     internal class Program
     {
@@ -23,10 +25,13 @@
                     Console.WriteLine("El triangulo no es equilatero");
                 }
             }
-            //Método 
 
             static void Main(string[] args)
             {
+                Triangulo trian = new Triangulo();
+                // trian nombre de nuetro objeto
+                //new gestiona espacio en memoria
+                trian.Equilatero();
             }
         }
     }
