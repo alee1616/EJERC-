@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\bin\Debug\net9.0\ejercicioooo.exe
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\bin\Debug\net9.0\ejercicioooo.deps.json
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\bin\Debug\net9.0\ejercicioooo.runtimeconfig.json
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\bin\Debug\net9.0\ejercicioooo.dll
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\bin\Debug\net9.0\ejercicioooo.pdb
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\obj\Debug\net9.0\ejercicioooo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\obj\Debug\net9.0\ejercicioooo.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\obj\Debug\net9.0\ejercicioooo.AssemblyInfo.cs
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\obj\Debug\net9.0\ejercicioooo.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\obj\Debug\net9.0\ejercicioooo.sourcelink.json
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\obj\Debug\net9.0\ejercicioooo.dll
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\obj\Debug\net9.0\refint\ejercicioooo.dll
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\obj\Debug\net9.0\ejercicioooo.pdb
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\obj\Debug\net9.0\ejercicioooo.genruntimeconfig.cache
+C:\Users\User\OneDrive\EJERC#\ejercicioooo\obj\Debug\net9.0\ref\ejercicioooo.dll
