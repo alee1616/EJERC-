@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\bin\Debug\net9.0\ejercicio1S9.exe
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\bin\Debug\net9.0\ejercicio1S9.deps.json
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\bin\Debug\net9.0\ejercicio1S9.runtimeconfig.json
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\bin\Debug\net9.0\ejercicio1S9.dll
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\bin\Debug\net9.0\ejercicio1S9.pdb
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\obj\Debug\net9.0\ejercicio1S9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\obj\Debug\net9.0\ejercicio1S9.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\obj\Debug\net9.0\ejercicio1S9.AssemblyInfo.cs
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\obj\Debug\net9.0\ejercicio1S9.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\obj\Debug\net9.0\ejercicio1S9.sourcelink.json
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\obj\Debug\net9.0\ejercicio1S9.dll
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\obj\Debug\net9.0\refint\ejercicio1S9.dll
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\obj\Debug\net9.0\ejercicio1S9.pdb
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\obj\Debug\net9.0\ejercicio1S9.genruntimeconfig.cache
+C:\Users\User\OneDrive\EJERC#\ejercicio1S9\obj\Debug\net9.0\ref\ejercicio1S9.dll

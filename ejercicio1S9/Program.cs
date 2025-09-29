@@ -31,6 +31,9 @@ namespace EjemploClase
                 Triangulo trian = new Triangulo();
                 // trian nombre de nuetro objeto
                 //new gestiona espacio en memoria
+                trian.lado1 = 5;
+                trian.lado2 = 5;
+                trian.lado3 = 5;
                 trian.Equilatero();
             }
         }
