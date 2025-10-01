@@ -1,4 +1,5 @@
-﻿//EJERCICIO 2 - SESIÓN 9
+﻿
+//EJERCICIO 2 - SESIÓN 9
 // Crea un programa en C# que simule una mascota virtual utilizando clases y objetos.
 
 using System;
