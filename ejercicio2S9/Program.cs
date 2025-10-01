@@ -34,7 +34,7 @@ class Mascota
             energia -= gasto;  // se descuenta la energía
             Console.WriteLine(nombre + " ha jugado durante " + tiempo + " minutos. Energía -" + gasto);
         }
-        else
+        else // si no tiene suficiente energía
         {
             Console.WriteLine(nombre + " no tiene suficiente energía para jugar."); 
         }
