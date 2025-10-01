@@ -1,4 +1,5 @@
-﻿// Crea un programa en C# que simule una mascota virtual utilizando clases y objetos.
+﻿//EJERCICIO 2 - SESIÓN 9
+// Crea un programa en C# que simule una mascota virtual utilizando clases y objetos.
 
 using System;
 
@@ -12,6 +13,9 @@ class Mascota
 
     // Constructor: se usa para inicializar un objeto de la clase Mascota
     public Mascota(string nombre, string tipo)
+    //se pusieron parámetros para inicializar los atributos
+    //con public Mascota(string nombre, string tipo, int energia) se podría inicializar la energía también
+    //este devuelve un objeto de tipo Mascota
     {
         this.nombre = nombre;   // "this" se usa para diferenciar entre el parámetro y el atributo
         this.tipo = tipo;
@@ -19,7 +23,8 @@ class Mascota
     }
 
     // Método para jugar: recibe un tiempo en minutos y descuenta energía
-    public void Jugar(int tiempo)
+    public void Jugar(int tiempo) 
+    // se usó void porque no devuelve ningún valor
     {
         int gasto = tiempo * 10;   // cada minuto de juego gasta 10 puntos de energía
         if (energia >= gasto)      // solo puede jugar si tiene suficiente energía
@@ -34,9 +39,9 @@ class Mascota
     }
 
     // Método para alimentar: recibe una cantidad y aumenta la energía
-    public void Alimentar(int cantidad)
+    public void Alimentar(int cantidad) // se usa void porque no devuelve ningún valor
     {
-        energia += cantidad;   // se suma energía
+        energia += cantidad;   // se suma energía, al alimentar a la mascota
         if (energia > 100)     // la energía no puede pasar de 100
         {
             energia = 100;
@@ -51,34 +56,48 @@ class Mascota
     }
 }
 
+// Clase principal Program
+// Aquí está el método Main que es el punto de entrada del programa.
 class Program
 {
     static void Main(string[] args)
     {
-        // Crear dos objetos de la clase Mascota usando el constructor
+        // ----------------------------------
+        // CREACIÓN DE OBJETOS (MASCOTAS)
+        // ----------------------------------
+        // Usamos la clase Mascota para crear dos objetos distintos:
         Mascota perro = new Mascota("Firulais", "Perro");  
         Mascota gato = new Mascota("Misu", "Gato");
 
-        // Mostrar el estado inicial de cada mascota
+        // ----------------------------------
+        // ESTADO INICIAL DE LAS MASCOTAS
+        // ----------------------------------
         perro.Estado();
         gato.Estado();
 
-        // Acciones con el perro
-        perro.Jugar(3);   // el perro juega 3 minutos → gasta 30 de energía
-        perro.Estado();   // se muestra el estado después de jugar
-        perro.Alimentar(20); // se alimenta al perro con +20 de energía
-        perro.Estado();   // se muestra el estado actualizado
+        // ----------------------------------
+        // ACCIONES CON EL PERRO
+        // ----------------------------------
+        perro.Jugar(3);       // Firulais juega 3 minutos → gasta 30 de energía
+        perro.Estado();       // Se muestra el estado después de jugar
+        perro.Alimentar(20);  // Firulais come y recupera +20 de energía
+        perro.Estado();       // Se muestra el estado actualizado
 
-        Console.WriteLine(); // salto de línea para separar las acciones
+        Console.WriteLine();  // Línea en blanco para separar
 
-        // Acciones con el gato
-        gato.Jugar(5);    // el gato juega 5 minutos → gasta 50 de energía
-        gato.Estado();    // se muestra el estado después de jugar
-        gato.Alimentar(15); // se alimenta al gato con +15 de energía
-        gato.Estado();    // se muestra el estado actualizado
+        // ----------------------------------
+        // ACCIONES CON EL GATO
+        // ----------------------------------
+        gato.Jugar(5);        // Misu juega 5 minutos → gasta 50 de energía
+        gato.Estado();        // Estado después de jugar
+        gato.Alimentar(15);   // Misu come y recupera +15 de energía
+        gato.Estado();        // Estado actualizado
 
-        // Esto se usa para pausar la consola y que el programa no se cierre automáticamente
+        // ----------------------------------
+        // FIN DEL PROGRAMA
+        // ----------------------------------
+        // Console.ReadLine se usa para que la ventana de la consola
+        // no se cierre automáticamente al terminar.
         Console.ReadLine();
     }
 }
-
