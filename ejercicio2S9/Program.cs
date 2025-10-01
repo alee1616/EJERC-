@@ -66,6 +66,7 @@ class Mascota
 // Usamos la clase Mascota para crear dos objetos distintos:
 //los dos objetos creados son independientes, cada uno tiene sus propios atributos
 //en este caso son perro y gato
+//este es el "programa principal" que usa la clase Mascota, donde lo llamas métodos y muestra resultados
 class Program
 {
     static void Main(string[] args)
@@ -73,14 +74,14 @@ class Program
         // CREACIÓN DE OBJETOS (MASCOTAS)
         // Usamos la clase Mascota para crear dos objetos distintos:
 
-        Mascota perro = new Mascota("Firulais", "Perro");  
+        Mascota perro = new Mascota("Firulais", "Perro");
         Mascota gato = new Mascota("Misu", "Gato");
         Console.WriteLine();  // Línea en blanco para separar
 
         Console.WriteLine(">>>>>> ESTADO INICIAL <<<<<<");
         // ESTADO INICIAL DE LAS MASCOTAS
-        perro.Estado();
-        gato.Estado();
+        perro.Estado(); // Muestra el estado inicial del perro que esta conectado a la variable perro  y llama al método Estado.
+        gato.Estado(); // Muestra el estado inicial del gato que esta conectado a la variable gato y llama al método Estado.
 
         Console.WriteLine("\n////// ACCIONES DE FIRULAIS //////");
 
