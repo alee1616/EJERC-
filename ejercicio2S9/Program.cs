@@ -5,9 +5,10 @@ using System;
 class Mascota
 {
     // Atributos (variables que representan características de la mascota)
+    // el public se usa para que se pueda acceder desde fuera de la clase, entonces son "públicos".
     public string nombre;   // almacena el nombre de la mascota
     public string tipo;     // almacena el tipo de mascota (perro, gato, etc.)
-    public int energia;     // nivel de energía de la mascota (0 a 100)
+    public int energia;     // nivel de energía de la mascota (0 a 100 en este caso)
 
     // Constructor: se usa para inicializar un objeto de la clase Mascota
     public Mascota(string nombre, string tipo)
