@@ -51,6 +51,8 @@ class Mascota
 
     // Método para mostrar el estado de la mascota
     public void Estado()
+    // se usa void porque no devuelve ningún valor y solo muestra información
+    // Muestra el nombre, tipo y nivel de energía actual.
     {
         Console.WriteLine("Mascota: " + nombre + " | Tipo: " + tipo + " | Energía: " + energia);
     }
@@ -61,23 +63,20 @@ class Mascota
 class Program
 {
     static void Main(string[] args)
+    // el static se usa para que no haga falta crear un objeto de la clase Program para llamar a Main
     {
-        // ----------------------------------
         // CREACIÓN DE OBJETOS (MASCOTAS)
-        // ----------------------------------
         // Usamos la clase Mascota para crear dos objetos distintos:
+        //los dos objetos creados son independientes, cada uno tiene sus propios atributos
+        //en este caso son perro y gato
         Mascota perro = new Mascota("Firulais", "Perro");  
         Mascota gato = new Mascota("Misu", "Gato");
 
-        // ----------------------------------
         // ESTADO INICIAL DE LAS MASCOTAS
-        // ----------------------------------
         perro.Estado();
         gato.Estado();
 
-        // ----------------------------------
         // ACCIONES CON EL PERRO
-        // ----------------------------------
         perro.Jugar(3);       // Firulais juega 3 minutos → gasta 30 de energía
         perro.Estado();       // Se muestra el estado después de jugar
         perro.Alimentar(20);  // Firulais come y recupera +20 de energía
@@ -85,17 +84,13 @@ class Program
 
         Console.WriteLine();  // Línea en blanco para separar
 
-        // ----------------------------------
         // ACCIONES CON EL GATO
-        // ----------------------------------
         gato.Jugar(5);        // Misu juega 5 minutos → gasta 50 de energía
         gato.Estado();        // Estado después de jugar
         gato.Alimentar(15);   // Misu come y recupera +15 de energía
         gato.Estado();        // Estado actualizado
 
-        // ----------------------------------
         // FIN DEL PROGRAMA
-        // ----------------------------------
         // Console.ReadLine se usa para que la ventana de la consola
         // no se cierre automáticamente al terminar.
         Console.ReadLine();
