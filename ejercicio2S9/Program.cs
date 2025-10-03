@@ -14,10 +14,12 @@ class Mascota
 
     // Constructor: se usa para inicializar un objeto de la clase Mascota
     public Mascota(string nombre, string tipo)
-    //se pusieron parámetros para inicializar los atributos
+    //se pusieron parámetros para inicializar los atributos como lo son nombre y tipo
+    //si no se pone constructor, C# crea uno por defecto que no inicializa nada
     //con public Mascota(string nombre, string tipo, int energia) se podría inicializar la energía también
     //este devuelve un objeto de tipo Mascota
     {
+        //este es  el constructor que se llama cuando se crea un nuevo objeto Mascota
         this.nombre = nombre;
         // "this" se usa para diferenciar entre el parámetro y el atributo
         // this es para referirse al objeto actual, en este caso al objeto Mascota que se está creando.
@@ -110,3 +112,6 @@ class Program
         Console.ReadLine();
     }
 }
+ // En este caso se creó una clase Mascota con atributos y métodos para simular una mascota virtual.
+ //Se crearon en el mismo archivo las clases Mascota y Program para simplificar.
+ //En un proyecto real, lo ideal es tener cada clase en su propio archivo.
