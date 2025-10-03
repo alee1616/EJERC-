@@ -29,7 +29,8 @@ class Mascota
 
     // Método para jugar: recibe un tiempo en minutos y descuenta energía
     public void Jugar(int tiempo) 
-    // se usó void porque no devuelve ningún valor
+    // se usó void porque no devuelve ningún valor y public para que se pueda llamar desde fuera de la clase
+    // el parámetro tiempo indica cuánto tiempo va a jugar la mascota
     {
         int gasto = tiempo * 10;   // cada minuto de juego gasta 10 puntos de energía
         if (energia >= gasto)
