@@ -28,7 +28,8 @@ class Mascota
     }
 
     // Método para jugar: recibe un tiempo en minutos y descuenta energía
-    public void Jugar(int tiempo) 
+    //
+    public void Jugar(int tiempo)
     // se usó void porque no devuelve ningún valor y public para que se pueda llamar desde fuera de la clase
     // el parámetro tiempo indica cuánto tiempo va a jugar la mascota
     {
@@ -42,7 +43,7 @@ class Mascota
         }
         else // si no tiene suficiente energía
         {
-            Console.WriteLine(nombre + " no tiene suficiente energía para jugar."); 
+            Console.WriteLine(nombre + " no tiene suficiente energía para jugar.");
         }
     }
 
@@ -80,8 +81,8 @@ class Program
         // CREACIÓN DE OBJETOS (MASCOTAS)
         // Usamos la clase Mascota para crear dos objetos distintos:
 
-        Mascota perro = new Mascota("Firulais", "Perro");
-        Mascota gato = new Mascota("Misu", "Gato");
+        Mascota perro = new Mascota("Firulais", "Perro"); // se crea un objeto de tipo Mascota llamado perro
+        Mascota gato = new Mascota("Misu", "Gato"); // se crea otro objeto de tipo Mascota llamado gato
         Console.WriteLine();  // Línea en blanco para separar
 
         Console.WriteLine(">>>>>> ESTADO INICIAL <<<<<<");
