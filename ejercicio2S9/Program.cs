@@ -32,7 +32,9 @@ class Mascota
     // se usó void porque no devuelve ningún valor
     {
         int gasto = tiempo * 10;   // cada minuto de juego gasta 10 puntos de energía
-        if (energia >= gasto)      // solo puede jugar si tiene suficiente energía
+        if (energia >= gasto)
+        // solo puede jugar si tiene suficiente energía, el 
+        // operador >= se usa para comparar si la energía es mayor o igual al gasto
         {
             energia -= gasto;  // se descuenta la energía
             Console.WriteLine(nombre + " ha jugado durante " + tiempo + " minutos. Energía -" + gasto);
