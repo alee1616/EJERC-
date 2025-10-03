@@ -77,6 +77,10 @@ class Mascota
 class Program
 {
     static void Main(string[] args)
+    // punto de entrada del programa estatic porque no se necesita crear un objeto Program
+    // se usa static void Main(string[] args) porque no devuelve ningún valor y puede recibir argumentos.
+    // args es un arreglo de cadenas que puede contener argumentos pasados desde la línea de comandos
+    //un argumento es un valor que se pasa a un método cuando se llama
     {
         // CREACIÓN DE OBJETOS (MASCOTAS)
         // Usamos la clase Mascota para crear dos objetos distintos:
@@ -119,3 +123,7 @@ class Program
  // En este caso se creó una clase Mascota con atributos y métodos para simular una mascota virtual.
  //Se crearon en el mismo archivo las clases Mascota y Program para simplificar.
  //En un proyecto real, lo ideal es tener cada clase en su propio archivo.
+
+ //las instancias de la clase Mascota son perro y gato, cada una con su propio estado y comportamiento.
+ //El programa principal crea las mascotas, realiza acciones con ellas y muestra su estado en la consola
+ //este está en la parte final del código, dentro de la clase Program.
