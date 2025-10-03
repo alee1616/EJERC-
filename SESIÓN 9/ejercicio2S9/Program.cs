@@ -100,7 +100,7 @@ class Program
         Console.WriteLine();  // Línea en blanco para separar
 
 
-        Console.WriteLine("\n////// ACCIONES DE FIRULAIS //////");
+        Console.WriteLine("\n////// ACCIONES DE MISU //////");
         // ACCIONES CON EL GATO
         gato.Jugar(5);        // Misu juega 5 minutos → gasta 50 de energía
         gato.Estado();        // Estado después de jugar
