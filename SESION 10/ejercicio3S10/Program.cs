@@ -1,92 +1,99 @@
-﻿using System; // se usa para poder usar la clase Console
+﻿// ---------------------------------------------
+// Programa: IntercalarArreglos
+// Combina dos arreglos intercalando sus valores.
+// Muestra el resultado y el origen de cada dato.
+// Incluye validación básica de entradas.
+// ---------------------------------------------
 
-public class IntercalarArreglos // nombre de la clase
+
+using System; // Necesario para usar Console y otras funcionalidades básicas de el sistema
+public class IntercalarArreglos // Clase principal del programa 
 {
-    public static void Main(string[] args) // punto de entrada del programa, método Main
+    public static void Main(string[] args) // Método principal, punto de entrada del programa
     {
-        Console.WriteLine("Programa para intercalar dos arreglos.");
+        Console.WriteLine("=== Programa para intercalar dos arreglos ===\n");
 
-        // Primero, se va a pedir el tamaño de los arreglos.
-        // Asumimos que ambos arreglos tendrán el mismo tamaño para que sea más sencillo.
-        int n;
-        Console.Write("¿De qué tamaño quieres que sean los arreglos? (Introduce un número): ");
-        n = Convert.ToInt32(Console.ReadLine());
+        int n; // número de elementos en cada arreglo
 
-        // Creamos los dos arreglos, arr1 y arr2, con el tamaño que nos dieron.
-        // Usamos 'int' para que sean arreglos de enteros.
-        int[] arr1 = new int[n];
-        int[] arr2 = new int[n];
+        // Acá pedimos el tamaño de los arreglos. Ambos tendrán el mismo número de elementos.
+        // Uso TryParse para que no se caiga si alguien escribe una letra.
 
-        // Ahora, vamos a pedir los valores para el primer arreglo.
-        Console.WriteLine("\nIntroduce los " + n + " valores para el PRIMER arreglo:");
-        for (int i = 0; i < n; i++) // i++ para avanzar en el ciclo
-        // usamos un ciclo for para recorrer cada posición del arreglo
+        // Para pedir tamaño de los arreglos con validación de entrada
+        while (true)
         {
-            Console.Write("Valor para arr1 en la posición " + i + ": ");
-            arr1[i] = Convert.ToInt32(Console.ReadLine());
+            Console.Write("¿Cuántos elementos tendrá cada arreglo? ");
+            if (int.TryParse(Console.ReadLine(), out n) && n > 0)
+                // si se pudo convertir y es positivo
+                // out n asigna el valor convertido a n
+                // el operador && es "y lógico", ambas condiciones deben ser verdaderas
+                // el operador > compara si n es mayor que 0
+                break;
+
+            Console.WriteLine(" Por favor, ingresa un número entero positivo!.\n");
         }
 
-        // Y ahora, los valores para el segundo arreglo.
-        Console.WriteLine("\nIntroduce los " + n + " valores para el SEGUNDO arreglo:");
+        // los arreglos con el tamaño solicitado
+        int[] arr1 = new int[n]; // primer arreglo
+        int[] arr2 = new int[n]; // segundo arreglo
+
+        // Capturar los valores del primer arreglo
+        Console.WriteLine("\nIntroduce los valores del primer arreglo:(enter para el siguiente valor)");
         for (int i = 0; i < n; i++)
         {
-            Console.Write("Valor para arr2 en la posición " + i + ": ");
-            arr2[i] = Convert.ToInt32(Console.ReadLine());
-            //array2[i] accede a la posición i del arreglo arr2 la cual se llena con el valor leído
+            arr1[i] = LeerEntero($"  arr1[{i + 1}]: ");
         }
 
-        // El tercer arreglo, 'resultado', tendrá el doble de tamaño
-        // porque vamos a meter todos los elementos de arr1 y arr2.
-        // n * 2 es para duplicar el tamaño.
+        // Capturar los valores del segundo arreglo
+        Console.WriteLine("\nIntroduce los valores del segundo arreglo:(enter para el siguiente valor)");
+        for (int i = 0; i < n; i++)
+        // i va de 0 a n-1
+        // quiere decir que se repite n veces (0, 1, 2, ..., n-1)
+        {
+            arr2[i] = LeerEntero($"  arr2[{i + 1}]: ");
+            // se usa i+1 para mostrar al usuario índices desde 1
+        }
+
+        // Acá creamos el tercer arreglo que guardará la mezcla de ambos.
+        // Es del doble de tamaño porque contiene todos los valores de arr1 y arr2.
         int[] resultado = new int[n * 2];
+        int indiceResultado = 0; // Este índice lo usamos para movernos dentro del arreglo nuevo.
 
-        // Esta variable ayudará a saber en qué posición del arreglo 'resultado' vamos.
-        int indiceResultado = 0;
 
-        // Aquí es donde hacemos la "intercalación".
-        // Vamos a recorrer los arreglos originales.
+        // Este for intercalará los valores.
+        // Básicamente: un valor de arr1, luego uno de arr2, y así sucesivamente.
         for (int i = 0; i < n; i++)
         {
-            // Primero, ponemos un elemento de arr1 en 'resultado'.
-            resultado[indiceResultado] = arr1[i];
-            indiceResultado++; // Avanzamos a la siguiente posición.
-
-            // Luego, ponemos un elemento de arr2 en 'resultado'.
-            resultado[indiceResultado] = arr2[i];
-            indiceResultado++; // Avanzamos de nuevo.
+            // Intercalamos un elemento de arr1 y luego uno de arr2
+            resultado[indiceResultado++] = arr1[i]; // ahi se mete uno de arr1
+            resultado[indiceResultado++] = arr2[i]; // y acá uno de arr2
         }
 
-        // ¡Listo! Ya tenemos el arreglo intercalado. Ahora lo mostramos.
-        Console.WriteLine("\nEl arreglo intercalado es:");
-        Console.Write("[");
+        // Mostrar el arreglo intercalado
+        Console.WriteLine("\n=== Arreglo intercalado ===");
+        Console.WriteLine("[{0}]", string.Join(", ", resultado));
+
+        // Mostrar el origen de cada valor
+        Console.WriteLine("\n=== Origen de cada valor ===");
         for (int i = 0; i < resultado.Length; i++)
         {
-            Console.Write(resultado[i]);
-            if (i < resultado.Length - 1) // Para no poner la coma al final.
-            {
-                Console.Write(", ");
-            }
+            string origen = (i % 2 == 0) ? "arr1" : "arr2";
+            Console.WriteLine($"{resultado[i]} → {origen}");
         }
-        Console.WriteLine("]");
 
-        // Ahora viene la segunda parte: identificar el origen de cada valor.
-        Console.WriteLine("\nOrigen de cada valor en el arreglo intercalado:");
-        for (int i = 0; i < resultado.Length; i++)
+        Console.WriteLine("\n :) Programa finalizado correctamente.");
+    }
+
+    // Método auxiliar para leer enteros con manejo de errores
+    static int LeerEntero(string mensaje)
+    {
+        int valor;
+        while (true)
         {
-            // Para saber si viene de arr1 o arr2, podemos ver la posición original.
-            // Si la posición en el arreglo 'resultado' es par (0, 2, 4...),
-            // significa que ese valor vino de arr1.
-            // Si es impar (1, 3, 5...), vino de arr2.
-            if (i % 2 == 0) // El operador '%' nos da el "resto" de una división. Si el resto es 0, es par.
-            {
-                Console.WriteLine(resultado[i] + " (arr1)");
-            }
-            else
-            {
-                Console.WriteLine(resultado[i] + " (arr2)");
-            }
-        }
+            Console.Write(mensaje);
+            if (int.TryParse(Console.ReadLine(), out valor))
+                return valor;
 
-        Console.WriteLine("\nFin del programa!!");
+            Console.WriteLine(" Entrada inválida!. Ingrese un número entero.\n");
+        }
     }
 }
