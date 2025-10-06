@@ -2,7 +2,7 @@
 
 public class IntercalarArreglos // nombre de la clase
 {
-    public static void Main(string[] args)
+    public static void Main(string[] args) // punto de entrada del programa, método Main
     {
         Console.WriteLine("Programa para intercalar dos arreglos.");
 
