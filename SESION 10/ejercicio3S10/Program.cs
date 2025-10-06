@@ -1,9 +1,8 @@
-﻿// ---------------------------------------------
-// Programa: IntercalarArreglos
+﻿// Programa: IntercalarArreglos
 // Combina dos arreglos intercalando sus valores.
 // Muestra el resultado y el origen de cada dato.
 // Incluye validación básica de entradas.
-// ---------------------------------------------
+
 
 
 using System; // Necesario para usar Console y otras funcionalidades básicas de el sistema
