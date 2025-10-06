@@ -19,7 +19,8 @@ public class IntercalarArreglos // nombre de la clase
 
         // Ahora, vamos a pedir los valores para el primer arreglo.
         Console.WriteLine("\nIntroduce los " + n + " valores para el PRIMER arreglo:");
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) // i++ para avanzar en el ciclo
+        // usamos un ciclo for para recorrer cada posición del arreglo
         {
             Console.Write("Valor para arr1 en la posición " + i + ": ");
             arr1[i] = Convert.ToInt32(Console.ReadLine());
@@ -31,10 +32,12 @@ public class IntercalarArreglos // nombre de la clase
         {
             Console.Write("Valor para arr2 en la posición " + i + ": ");
             arr2[i] = Convert.ToInt32(Console.ReadLine());
+            //array2[i] accede a la posición i del arreglo arr2 la cual se llena con el valor leído
         }
 
         // El tercer arreglo, 'resultado', tendrá el doble de tamaño
         // porque vamos a meter todos los elementos de arr1 y arr2.
+        // n * 2 es para duplicar el tamaño.
         int[] resultado = new int[n * 2];
 
         // Esta variable nos ayudará a saber en qué posición del arreglo 'resultado' vamos.
