@@ -6,7 +6,7 @@ public class IntercalarArreglos // nombre de la clase
     {
         Console.WriteLine("Programa para intercalar dos arreglos.");
 
-        // Primero, vamos a pedir el tamaño de los arreglos.
+        // Primero, se va a pedir el tamaño de los arreglos.
         // Asumimos que ambos arreglos tendrán el mismo tamaño para que sea más sencillo.
         int n;
         Console.Write("¿De qué tamaño quieres que sean los arreglos? (Introduce un número): ");
@@ -40,7 +40,7 @@ public class IntercalarArreglos // nombre de la clase
         // n * 2 es para duplicar el tamaño.
         int[] resultado = new int[n * 2];
 
-        // Esta variable nos ayudará a saber en qué posición del arreglo 'resultado' vamos.
+        // Esta variable ayudará a saber en qué posición del arreglo 'resultado' vamos.
         int indiceResultado = 0;
 
         // Aquí es donde hacemos la "intercalación".
