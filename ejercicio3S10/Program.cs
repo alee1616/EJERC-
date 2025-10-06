@@ -1,6 +1,6 @@
-﻿using System;
+﻿using System; // se usa para poder usar la clase Console
 
-public class IntercalarArreglos
+public class IntercalarArreglos // nombre de la clase
 {
     public static void Main(string[] args)
     {
