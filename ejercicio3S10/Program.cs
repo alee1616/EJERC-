@@ -13,6 +13,7 @@ public class IntercalarArreglos // nombre de la clase
         n = Convert.ToInt32(Console.ReadLine());
 
         // Creamos los dos arreglos, arr1 y arr2, con el tamaño que nos dieron.
+        // Usamos 'int' para que sean arreglos de enteros.
         int[] arr1 = new int[n];
         int[] arr2 = new int[n];
 
