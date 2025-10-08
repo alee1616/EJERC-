@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\obj\Debug\net9.0\ejemplo1S10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\obj\Debug\net9.0\ejemplo1S10.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\obj\Debug\net9.0\ejemplo1S10.AssemblyInfo.cs
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\obj\Debug\net9.0\ejemplo1S10.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\obj\Debug\net9.0\ejemplo1S10.sourcelink.json
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\bin\Debug\net9.0\ejemplo1S10.exe
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\bin\Debug\net9.0\ejemplo1S10.deps.json
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\bin\Debug\net9.0\ejemplo1S10.runtimeconfig.json
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\bin\Debug\net9.0\ejemplo1S10.dll
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\bin\Debug\net9.0\ejemplo1S10.pdb
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\obj\Debug\net9.0\ejemplo1S10.dll
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\obj\Debug\net9.0\refint\ejemplo1S10.dll
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\obj\Debug\net9.0\ejemplo1S10.pdb
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\obj\Debug\net9.0\ejemplo1S10.genruntimeconfig.cache
+C:\Users\User\OneDrive\EJERC#\ejemplo1S10\obj\Debug\net9.0\ref\ejemplo1S10.dll

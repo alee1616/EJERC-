@@ -8,7 +8,7 @@ public class GestionTurnosClinica
 {
     public static void Main(string[] args)
     {
-Console.WriteLine("=== Gestión de turnos en una clínica ===\n");
+Console.WriteLine("//// Gestión de turnos en una clínica ////\n");
 
 const int totalPacientes = 20; // número fijo de pacientes
 
@@ -34,13 +34,13 @@ const int totalPacientes = 20; // número fijo de pacientes
             // Acá vamos agrupando cada edad en su categoría.
             if (edad <= 12)
             {
-                ninos++;
+                ninos++; // contamos un niño, el ++ es para sumar 1 a la variable
                 sumaNinos += edad;
             }
             else if (edad <= 25)
             {
                 jovenes++;
-                sumaJovenes += edad;
+                sumaJovenes += edad; // el += es para sumar a la variable lo que está a la derecha (edad en este caso).
             }
             else if (edad <= 60)
             {
@@ -64,7 +64,7 @@ const int totalPacientes = 20; // número fijo de pacientes
         // Acá verificamos si hay más de 5 personas mayores.
         if (mayores > 5)
         {
-            Console.WriteLine("\n⚠ Alerta: hay más de 5 personas mayores (alto riesgo).");
+            Console.WriteLine("\n Alerta: hay más de 5 personas mayores (alto riesgo).");
         }
 
         // Calculamos el promedio general y por grupo (solo si el grupo tiene personas).
@@ -85,13 +85,13 @@ const int totalPacientes = 20; // número fijo de pacientes
     }
 
     // Función auxiliar para leer enteros con validación y rango.
-    static int LeerEntero(string mensaje, int minimo, int maximo)
+    static int LeerEntero(string mensaje, int minimo, int maximo) // recibe el mensaje a mostrar y los límites
     {
-        int valor;
+        int valor; // variable para almacenar el valor ingresado
         while (true)
         {
             Console.Write(mensaje);
-            if (int.TryParse(Console.ReadLine(), out valor))
+            if (int.TryParse(Console.ReadLine(), out valor)) // Obtenemos el valor
             {
                 if (valor >= minimo && valor <= maximo)
                     return valor;
