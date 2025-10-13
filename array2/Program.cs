@@ -12,7 +12,12 @@ class EjemploEscritura // Clase principal
         try // Bloque try para código que puede generar excepciones, es comun cuando trabajamos con archivos
         {
             // Validar si el archivo ya existe
-            if (File.Exists(ruta)) // este es un ejemplo más básico de manejo de excepciones
+            if (File.Exists(ruta)) 
+            // el File.Exists es un método que verifica si un archivo existe en la ruta especificada
+             // devuelve true si el archivo existe y false si no
+             // Si el archivo ya existe
+             // ruta es una variable que contiene la ruta del archivo
+            // este es un ejemplo más básico de manejo de excepciones
              // con condicionales antes de intentar escribir en un archivo y también usanmos algunas de 
              // las excepciones que mencionamos antes
             {
@@ -24,9 +29,12 @@ class EjemploEscritura // Clase principal
             }
 
             // using garantiza que el archivo se cierre automáticamente
-            using (StreamWriter escritor = new StreamWriter(ruta, true)) // true → agrega texto sin borrar lo anterior
+            using (StreamWriter escritor = new StreamWriter(ruta, true))
+            // StreamWriter es una clase que permite escribir en archivos de texto
+            // el segundo parámetro (true) indica que se debe agregar al final del archivo si
+            // true → agrega texto sin borrar lo anterior
             {
-                escritor.WriteLine("Registro creado en: " + DateTime.Now); 
+                escritor.WriteLine("Registro creado en: " + DateTime.Now);
                 // Escribimos la fecha y hora actual
                 //DateTime.Now nos da la fecha y hora actual del sistema
                 escritor.WriteLine("Acción: Inicio de sesión");
@@ -44,9 +52,11 @@ class EjemploEscritura // Clase principal
         catch (DirectoryNotFoundException) // esta excepción es para cuando la carpeta no existe
         // y por lo tanto no puede crear el archivo ahí
         {
-            Console.WriteLine("Error: La carpeta especificada no existe.");
+            Console.WriteLine("Error: La carpeta especificada no existe."); // ex.Message nos da detalles del error
         }
-        catch (IOException ex) // IOException es una excepción más general que maneja errores de entrada/salida
+        catch (IOException ex) 
+        // IOException es una excepción más general que maneja errores de entrada/salida
+        // como problemas al escribir en el disco, falta de espacio, etc.   
         {
             Console.WriteLine("Error de entrada/salida: " + ex.Message); // ex.Message nos da detalles del error
         }
