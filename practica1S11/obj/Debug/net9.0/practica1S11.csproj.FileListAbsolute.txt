@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\EJERC#\practica1S11\bin\Debug\net9.0\practica1S11.exe
+C:\Users\User\OneDrive\EJERC#\practica1S11\bin\Debug\net9.0\practica1S11.deps.json
+C:\Users\User\OneDrive\EJERC#\practica1S11\bin\Debug\net9.0\practica1S11.runtimeconfig.json
+C:\Users\User\OneDrive\EJERC#\practica1S11\bin\Debug\net9.0\practica1S11.dll
+C:\Users\User\OneDrive\EJERC#\practica1S11\bin\Debug\net9.0\practica1S11.pdb
+C:\Users\User\OneDrive\EJERC#\practica1S11\obj\Debug\net9.0\practica1S11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\EJERC#\practica1S11\obj\Debug\net9.0\practica1S11.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\EJERC#\practica1S11\obj\Debug\net9.0\practica1S11.AssemblyInfo.cs
+C:\Users\User\OneDrive\EJERC#\practica1S11\obj\Debug\net9.0\practica1S11.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\EJERC#\practica1S11\obj\Debug\net9.0\practica1S11.sourcelink.json
+C:\Users\User\OneDrive\EJERC#\practica1S11\obj\Debug\net9.0\practica1S11.dll
+C:\Users\User\OneDrive\EJERC#\practica1S11\obj\Debug\net9.0\refint\practica1S11.dll
+C:\Users\User\OneDrive\EJERC#\practica1S11\obj\Debug\net9.0\practica1S11.pdb
+C:\Users\User\OneDrive\EJERC#\practica1S11\obj\Debug\net9.0\practica1S11.genruntimeconfig.cache
+C:\Users\User\OneDrive\EJERC#\practica1S11\obj\Debug\net9.0\ref\practica1S11.dll

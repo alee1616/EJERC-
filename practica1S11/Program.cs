@@ -1,7 +1,7 @@
 ﻿// ejemplo de funcionamiento de las filas 
 
 
-string[] palabras = new string[3];
+Stack<string> palabras = new Stack<string>();
 
 Stack<int> pila = new Stack<int>();
 palabras.Push("uno");
