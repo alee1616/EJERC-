@@ -26,7 +26,6 @@ public class ProgramaSoftware
     //valores a las propiedades de un objeto.
     // En este caso, Id es una propiedad de la clase ProgramaSoftware que representa
     // el identificador único de cada programa de software.
-    // en este caso Id, Nombre y Version son los objetos de la clase ProgramaSoftware
     //Son las propiedades (atributos) de la clase. Id, Nombre y Version 
     // son los datos que tendrá cada programa de software.
     public string Nombre { get; set; }
@@ -73,6 +72,7 @@ public class CatalogoSoftwareApp // Clase principal que maneja el catálogo de s
     //Declara una variable de instancia privada. List<ProgramaSoftware> 
     // es una lista que solo puede contener objetos del tipo ProgramaSoftware. 
     // Esta lista es donde se almacena todo el catálogo.
+    //esta lista contiene id, nombre y version de cada software.
     private int proximoId = 1;
     //Declara un contador para asignar un ID único y 
     // auto-incremental a cada nuevo software (entre comillas) que se agregue. Empieza en 1.
