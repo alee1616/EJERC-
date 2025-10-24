@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\EJERC#\examen2corte\bin\Debug\net9.0\examen2corte.exe
+C:\Users\User\OneDrive\EJERC#\examen2corte\bin\Debug\net9.0\examen2corte.deps.json
+C:\Users\User\OneDrive\EJERC#\examen2corte\bin\Debug\net9.0\examen2corte.runtimeconfig.json
+C:\Users\User\OneDrive\EJERC#\examen2corte\bin\Debug\net9.0\examen2corte.dll
+C:\Users\User\OneDrive\EJERC#\examen2corte\bin\Debug\net9.0\examen2corte.pdb
+C:\Users\User\OneDrive\EJERC#\examen2corte\obj\Debug\net9.0\examen2corte.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\EJERC#\examen2corte\obj\Debug\net9.0\examen2corte.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\EJERC#\examen2corte\obj\Debug\net9.0\examen2corte.AssemblyInfo.cs
+C:\Users\User\OneDrive\EJERC#\examen2corte\obj\Debug\net9.0\examen2corte.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\EJERC#\examen2corte\obj\Debug\net9.0\examen2corte.sourcelink.json
+C:\Users\User\OneDrive\EJERC#\examen2corte\obj\Debug\net9.0\examen2corte.dll
+C:\Users\User\OneDrive\EJERC#\examen2corte\obj\Debug\net9.0\refint\examen2corte.dll
+C:\Users\User\OneDrive\EJERC#\examen2corte\obj\Debug\net9.0\examen2corte.pdb
+C:\Users\User\OneDrive\EJERC#\examen2corte\obj\Debug\net9.0\examen2corte.genruntimeconfig.cache
+C:\Users\User\OneDrive\EJERC#\examen2corte\obj\Debug\net9.0\ref\examen2corte.dll
