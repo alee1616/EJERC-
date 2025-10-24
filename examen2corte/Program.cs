@@ -16,6 +16,8 @@ using System.Linq;
  */
 
 public class ProgramaSoftware
+// Clase para representar un programa de software
+//el public class ProgramaSoftware
 {
     // ... (Clase ProgramaSoftware sin cambios)
     public int Id { get; set; }
@@ -62,7 +64,7 @@ public class CatalogoSoftwareApp
     {
         catalogo.Add(programa);
     }
-    
+
     // ... (Métodos BuscarSoftwarePorNombre, EliminarPorId, MostrarCatalogoCompleto sin cambios relevantes)
     private List<ProgramaSoftware> BuscarSoftwarePorNombre(string nombreBusqueda)
     {
@@ -70,7 +72,7 @@ public class CatalogoSoftwareApp
             .Where(p => p.Nombre.ToLower().Contains(nombreBusqueda.ToLower()))
             .ToList();
     }
-    
+
     private bool EliminarPorId(int id)
     {
         var programaAEliminar = catalogo.Find(p => p.Id == id);
@@ -117,7 +119,7 @@ public class CatalogoSoftwareApp
         Console.WriteLine("\n--- Agregar Nuevo Software ---");
         Console.Write("Nombre del Software (ej: AutoCAD): ");
         // Uso de '?? ""' para asegurar que 'nombre' no es null, eliminando la advertencia.
-        string nombre = Console.ReadLine() ?? ""; 
+        string nombre = Console.ReadLine() ?? "";
         Console.Write("Versión (ej: 2024): ");
         // Uso de '?? ""' para asegurar que 'version' no es null, eliminando la advertencia.
         string version = Console.ReadLine() ?? "";
@@ -159,7 +161,7 @@ public class CatalogoSoftwareApp
 
         var resultados = BuscarSoftwarePorNombre(termino);
 
-        if (resultados.Any()) 
+        if (resultados.Any())
         {
             Console.WriteLine($"\n--- Resultados de la búsqueda para '{termino}' ({resultados.Count} encontrados) ---");
             foreach (var programa in resultados)
@@ -181,7 +183,7 @@ public class CatalogoSoftwareApp
         {
             MostrarMenu();
             // Uso de '?? ""' para asegurar que 'opcion' no es null, eliminando la advertencia.
-            string opcion = Console.ReadLine() ?? ""; 
+            string opcion = Console.ReadLine() ?? "";
 
             // Intentamos convertir la entrada a entero para usarla en el switch.
             if (int.TryParse(opcion, out int opcionElegida))
@@ -213,16 +215,16 @@ public class CatalogoSoftwareApp
             {
                 Console.WriteLine("Entrada no válida. Por favor, ingrese el número de la opción.");
             }
-            
+
             if (continuar)
             {
                 Console.WriteLine("\nPresione ENTER para continuar...");
                 // Aquí también aseguramos que la lectura no sea nula.
-                Console.ReadLine(); 
+                Console.ReadLine();
             }
         }
     }
-    
+
     public static void Main(string[] args)
     {
         var app = new CatalogoSoftwareApp();
