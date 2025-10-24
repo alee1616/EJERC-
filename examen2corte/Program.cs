@@ -86,7 +86,8 @@ public class CatalogoSoftwareApp // Clase principal que maneja el catálogo de s
         // Inicializa la lista vacía para almacenar los programas de software
 
         // Datos iniciales
-        AgregarPrograma(new ProgramaSoftware(proximoId++, "Visual Studio", "2022"));
+        AgregarPrograma(new ProgramaSoftware(proximoId++, "Visual Studio", "2022")); 
+        // proximoId++ usa el valor actual y luego lo incrementa en 1
         AgregarPrograma(new ProgramaSoftware(proximoId++, "SQL Server", "2019"));
         AgregarPrograma(new ProgramaSoftware(proximoId++, "AutoCAD", "2024"));
         AgregarPrograma(new ProgramaSoftware(proximoId++, "Microsoft Office", "365"));
