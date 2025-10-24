@@ -101,7 +101,9 @@ public class CatalogoSoftwareApp // Clase principal que maneja el catálogo de s
     private void AgregarPrograma(ProgramaSoftware programa)
     // El private void indica que este método no devuelve ningún valor
     // y solo es accesible dentro de la clase CatalogoSoftwareApp.
-    //Crea nuevas instancias de ProgramaSoftware y las agrega a la lista. 
+    //Crea nuevas instancias de ProgramaSoftware y las agrega a la lista catalogo. 
+    // el ProgramaSoftware programa es el parámetro que recibe el método,
+    //representando el programa que se va a agregar al catálogo.
     {
         catalogo.Add(programa); // Agrega el programa a la lista del catálogo y finaliza el método.
     }
@@ -113,27 +115,33 @@ public class CatalogoSoftwareApp // Clase principal que maneja el catálogo de s
     {
         return catalogo // return devuelve el resultado de la búsqueda y finaliza el método.
             .Where(p => p.Nombre.ToLower().Contains(nombreBusqueda.ToLower()))
-            // Filtra los programas cuyo nombre contiene el término de búsqueda (sin distinguir mayúsculas/minúsculas)
+            // where Filtra los programas cuyo nombre contiene el término de búsqueda (sin distinguir mayúsculas/minúsculas)
+            //la p=> es una expresión lambda que representa una función anónima. y se lee como "para cada programa p"
             // p representa cada programa en la lista catalogo.
             // ToLower() convierte ambos nombres a minúsculas para una comparación insensible a mayúsculas.
             // Contains verifica si el nombre del programa incluye el término de búsqueda.
             // El método Where devuelve una colección de programas que cumplen con el criterio de búsqueda.
-            //la p=> es una expresión lambda que representa una función anónima. y se lee como "para cada programa p"
+            
             .ToList();
         // Finalmente, ToList() convierte esa colección filtrada en una lista.
 
     }
 
     private bool EliminarPorId(int id)
+    //private bool indica que este método devuelve un valor booleano (true o false),
+    //lo que indica si la eliminación fue exitosa o no.
     // Método para eliminar un programa por su ID. 
     // Devuelve true si se eliminó, false si no se encontró.
     {
         var programaAEliminar = catalogo.Find(p => p.Id == id);
         // Busca el programa con el ID especificado
-        //var es una palabra clave que permite al compilador inferir el tipo de la variable
+        //var es una palabra clave que permite al compilador inferir el tipo de la variable lo que significa que
+        // programaAEliminar tomará el tipo del valor devuelto por catalogo.Find(...)
         // Find busca el primer elemento que cumple con la condición dada.
         //por ejemplo, si id es 3, busca el programa cuyo Id sea 3.
+        
         if (programaAEliminar != null)
+        //if lo usamos en este caso para verificar si se encontró un programa con el ID dado.
         // Si se encontró el programa, lo elimina y devuelve true
         // != significa "no es igual a"
         // null representa la ausencia de un valor o referencia.
@@ -150,7 +158,7 @@ public class CatalogoSoftwareApp // Clase principal que maneja el catálogo de s
 
     public void MostrarCatalogoCompleto() // Método para mostrar todo el catálogo de software
     {
-        if (catalogo.Count == 0)
+        if (catalogo.Count == 0) 
         // Verifica si el catálogo está vacío
         // el catalogo.Count devuelve el número de elementos en la lista catalogo.
         // Si es 0, significa que no hay programas en el catálogo.
@@ -166,7 +174,7 @@ public class CatalogoSoftwareApp // Clase principal que maneja el catálogo de s
         Console.WriteLine("\n--- Catálogo de Software Completo ---");
         foreach (var programa in catalogo)
         //El forech recorre cada programa en la lista catalogo, significa "para cada"
-        //var es una palabra clave que permite al compilador inferir el tipo de la variable 
+        //var es una palabra clave que permite al compilador inferir el tipo de la variablek 
         // en este caso, programa va a representar cada objeto ProgramaSoftware en la lista.
         {
             Console.WriteLine(programa); // Muestra la información del programa usando el método ToString()
