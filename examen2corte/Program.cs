@@ -17,37 +17,74 @@ using System.Linq;
 
 public class ProgramaSoftware
 // Clase para representar un programa de software
-//el public class ProgramaSoftware
+//public significa que la clase es accesible desde cualquier parte del programa.
 {
     // ... (Clase ProgramaSoftware sin cambios)
-    public int Id { get; set; }
+    public int Id { get; set; } 
+    // EL get y set se usan para acceder y modificar las propiedades del objeto
+    //funcionan como métodos especiales que permiten obtener (get) y asignar (set) 
+    //valores a las propiedades de un objeto.
+    // En este caso, Id es una propiedad de la clase ProgramaSoftware que representa
+    // el identificador único de cada programa de software.
+    // en este caso Id, Nombre y Version son los objetos de la clase ProgramaSoftware
+    //Son las propiedades (atributos) de la clase. Id, Nombre y Version 
+    // son los datos que tendrá cada programa de software.
     public string Nombre { get; set; }
     public string Version { get; set; }
 
-    public ProgramaSoftware(int id, string nombre, string version)
+    public ProgramaSoftware(int id, string nombre, string version) 
+    //esta es la funcion constructora que inicializa los objetos
+    // de la clase ProgramaSoftware, 
+    // asignando los valores proporcionados a las propiedades Id, Nombre y Version.
+    // El constructor se llama automáticamente cuando se crea una nueva instancia de la clase.
+    // Los parámetros id, nombre y version son los valores que se pasan al constructor
+    // para inicializar las propiedades del objeto.
+    // por ejemplo, al crear un nuevo ProgramaSoftware con
+    // new ProgramaSoftware(1, "Visual Studio", "2022"),
+    // se asignan 1 a Id, "Visual Studio" a Nombre y "2022" a Version.
     {
         Id = id;
         Nombre = nombre;
         Version = version;
     }
 
-    public override string ToString()
+    public override string ToString() 
+    //sirve para devolver una representación en forma de cadena
+    // del objeto ProgramaSoftware.
+    // Esto es útil para mostrar información legible sobre el objeto
+    // cuando se imprime o se convierte a cadena.
     {
-        return $"[ID: {Id}] Nombre: {Nombre}, Versión: {Version}";
+        return $"[ID: {Id}] Nombre: {Nombre}, Versión: {Version}"; 
+        // el return devuelve la cadena formateada y finaliza el método.
+        // La cadena utiliza interpolación ($"") para incluir
+        // los valores de las propiedades Id, Nombre y Version  
+        //La $" al inicio es para usar una cadena interpolada, 
+        //insertando variables directamente dentro de las llaves {}
     }
 }
 
 // ******************************
 // Clase Principal del Programa
 // ******************************
-public class CatalogoSoftwareApp
+public class CatalogoSoftwareApp // Clase principal que maneja el catálogo de software
 {
     private List<ProgramaSoftware> catalogo;
+    // Lista para almacenar los programas de software
+    //Declara una variable de instancia privada. List<ProgramaSoftware> 
+    // es una lista que solo puede contener objetos del tipo ProgramaSoftware. 
+    // Esta lista es donde se almacena todo el catálogo.
     private int proximoId = 1;
+    //Declara un contador para asignar un ID único y 
+    // auto-incremental a cada nuevo software (entre comillas) que se agregue. Empieza en 1.
 
     public CatalogoSoftwareApp()
+    //Es el constructor de la clase CatalogoSoftwareApp. 
+    // Se ejecuta al iniciar la aplicación. Inicializa la lista catalogo
+    // y precarga algunos datos de ejemplo llamando al método AgregarPrograma
     {
         catalogo = new List<ProgramaSoftware>();
+        // Inicializa la lista vacía para almacenar los programas de software
+
         // Datos iniciales
         AgregarPrograma(new ProgramaSoftware(proximoId++, "Visual Studio", "2022"));
         AgregarPrograma(new ProgramaSoftware(proximoId++, "SQL Server", "2019"));
@@ -61,42 +98,80 @@ public class CatalogoSoftwareApp
     // ********************************
 
     private void AgregarPrograma(ProgramaSoftware programa)
+    // El private void indica que este método no devuelve ningún valor
+    // y solo es accesible dentro de la clase CatalogoSoftwareApp.
+    //Crea nuevas instancias de ProgramaSoftware y las agrega a la lista. 
     {
-        catalogo.Add(programa);
+        catalogo.Add(programa); // Agrega el programa a la lista del catálogo y finaliza el método.
     }
 
     // ... (Métodos BuscarSoftwarePorNombre, EliminarPorId, MostrarCatalogoCompleto sin cambios relevantes)
     private List<ProgramaSoftware> BuscarSoftwarePorNombre(string nombreBusqueda)
+    // Método para buscar programas por nombre (o parte del nombre), en caso de que no se encuentre nada
+    // devuelve una lista vacía.
     {
-        return catalogo
+        return catalogo // return devuelve el resultado de la búsqueda y finaliza el método.
             .Where(p => p.Nombre.ToLower().Contains(nombreBusqueda.ToLower()))
+            // Filtra los programas cuyo nombre contiene el término de búsqueda (sin distinguir mayúsculas/minúsculas)
+            // p representa cada programa en la lista catalogo.
+            // ToLower() convierte ambos nombres a minúsculas para una comparación insensible a mayúsculas.
+            // Contains verifica si el nombre del programa incluye el término de búsqueda.
+            // El método Where devuelve una colección de programas que cumplen con el criterio de búsqueda.
+            //la p=> es una expresión lambda que representa una función anónima. y se lee como "para cada programa p"
             .ToList();
+        // Finalmente, ToList() convierte esa colección filtrada en una lista.
+
     }
 
     private bool EliminarPorId(int id)
+    // Método para eliminar un programa por su ID. 
+    // Devuelve true si se eliminó, false si no se encontró.
     {
         var programaAEliminar = catalogo.Find(p => p.Id == id);
+        // Busca el programa con el ID especificado
+        //var es una palabra clave que permite al compilador inferir el tipo de la variable
+        // Find busca el primer elemento que cumple con la condición dada.
+        //por ejemplo, si id es 3, busca el programa cuyo Id sea 3.
         if (programaAEliminar != null)
+        // Si se encontró el programa, lo elimina y devuelve true
+        // != significa "no es igual a"
+        // null representa la ausencia de un valor o referencia.
+        // Si programaAEliminar no es null, significa que se encontró un programa con el ID dado.
         {
             return catalogo.Remove(programaAEliminar);
+            // Elimina el programa y devuelve true si tuvo éxito
+            // Remove elimina el elemento especificado de la lista.
+            // Si la eliminación es exitosa, devuelve true.
+            //remove devuelve un valor booleano que indica si el elemento fue encontrado y eliminado con éxito.
         }
-        return false;
+        return false; // Si no se encontró el programa, devuelve false
     }
 
-    public void MostrarCatalogoCompleto()
+    public void MostrarCatalogoCompleto() // Método para mostrar todo el catálogo de software
     {
         if (catalogo.Count == 0)
+        // Verifica si el catálogo está vacío
+        // el catalogo.Count devuelve el número de elementos en la lista catalogo.
+        // Si es 0, significa que no hay programas en el catálogo.
+        // Si el catálogo está vacío, muestra un mensaje y finaliza el método.
+        // el == 0 verifica si el número de elementos es igual a 0.
         {
             Console.WriteLine("El catálogo está vacío. Es hora de agregar software");
             return;
+            // Finaliza el método si el catálogo está vacío.
+            //en este caso no hay catálogo vacío, por lo que no se ejecuta el return.
         }
 
         Console.WriteLine("\n--- Catálogo de Software Completo ---");
         foreach (var programa in catalogo)
+        //El forech recorre cada programa en la lista catalogo, significa "para cada"
+        //var es una palabra clave que permite al compilador inferir el tipo de la variable 
+        // en este caso, programa va a representar cada objeto ProgramaSoftware en la lista.
         {
-            Console.WriteLine(programa);
+            Console.WriteLine(programa); // Muestra la información del programa usando el método ToString()
+            // Al pasar el objeto programa a Console.WriteLine,
         }
-        Console.WriteLine("------------------------------------\n");
+        Console.WriteLine("------------------------------------\n"); // Línea de separación para mejor legibilidad
     }
 
     // *********************************************************
@@ -231,3 +306,15 @@ public class CatalogoSoftwareApp
         app.Ejecutar();
     }
 }
+
+//se usaron 3 clases que fueron ProgramaSoftware, CatalogoSoftwareApp, 
+
+// una estructura de datos que fue List<ProgramaSoftware> 
+
+//(la estructura central para almacenar el catálogo).
+
+//Main (implícita/clase que contiene el punto de entrada).
+
+//de listas fueron un total de 7 listas usadas en el código.
+
+// Propiedades fueron 3 (get set) Id, Nombre, Version (Definen los datos de cada programa).
