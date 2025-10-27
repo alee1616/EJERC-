@@ -16,6 +16,7 @@ using System.Linq;
  */
 
 // Esta sección es para definir la clase ProgramaSoftware con sus propiedades y métodos.
+// que serán utilizados para representar cada programa de software en el catálogo.
 public class ProgramaSoftware //primeramente se define la clase ProgramaSoftware que representa un programa de software.
 // Clase para representar un programa de software
 //public significa que la clase es accesible desde cualquier parte del programa.
