@@ -15,13 +15,14 @@ using System.Linq;
  * para la solución
  */
 
+// Esta sección es para definir la clase ProgramaSoftware con sus propiedades y métodos.
 public class ProgramaSoftware //primeramente se define la clase ProgramaSoftware que representa un programa de software.
 // Clase para representar un programa de software
 //public significa que la clase es accesible desde cualquier parte del programa.
 {
     // ... (Clase ProgramaSoftware sin cambios)
     // esta es la definición de las propiedades de la clase ProgramaSoftware
-    public int Id { get; set; } 
+    public int Id { get; set; }
     // EL get y set se usan para acceder y modificar las propiedades del objeto
     //funcionan como métodos especiales que permiten obtener (get) y asignar (set) 
     //valores a las propiedades de un objeto.
@@ -32,7 +33,7 @@ public class ProgramaSoftware //primeramente se define la clase ProgramaSoftware
     public string Nombre { get; set; }
     public string Version { get; set; }
 
-    public ProgramaSoftware(int id, string nombre, string version) 
+    public ProgramaSoftware(int id, string nombre, string version)
     //esta es la funcion constructora que inicializa los objetos
     // de la clase ProgramaSoftware, 
     // asignando los valores proporcionados a las propiedades Id, Nombre y Version.
@@ -48,21 +49,24 @@ public class ProgramaSoftware //primeramente se define la clase ProgramaSoftware
         Version = version;
     }
 
-    public override string ToString() 
+    public override string ToString()
     // el publico override indica que este método reemplaza
     // una implementación heredada de la clase base (en este caso, Object).
-    //en simples palabras, ToString es un método que 
-    //sirve para devolver una representación en forma de cadena
-    // del objeto ProgramaSoftware.
+    //en simples palabras, ToString es un método especial que   
+    // se utiliza para convertir un objeto en una cadena de texto, los cuales tienen Id, Nombre y Version.
+    //sirve para devolver una representación en forma de cadena del objeto ProgramaSoftware.
     // Esto es útil para mostrar información legible sobre el objeto
     // cuando se imprime o se convierte a cadena.
     {
-        return $"[ID: {Id}] Nombre: {Nombre}, Versión: {Version}"; 
+        return $"[ID: {Id}] Nombre: {Nombre}, Versión: {Version}";
         // el return devuelve la cadena formateada y finaliza el método.
+        // el $ se dice como cadena interpolada,
         // La cadena utiliza interpolación ($"") para incluir
         // los valores de las propiedades Id, Nombre y Version  
-        //La $" al inicio es para usar una cadena interpolada, 
+        //La $" al inicio es para usar una cadena interpolada,
+        //las variables como numeros o texto se pueden insertar directamente dentro de las llaves {}
         //insertando variables directamente dentro de las llaves {}
+
     }
 }
 
