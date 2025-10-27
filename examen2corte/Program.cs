@@ -15,11 +15,12 @@ using System.Linq;
  * para la solución
  */
 
-public class ProgramaSoftware
+public class ProgramaSoftware //primeramente se define la clase ProgramaSoftware que representa un programa de software.
 // Clase para representar un programa de software
 //public significa que la clase es accesible desde cualquier parte del programa.
 {
     // ... (Clase ProgramaSoftware sin cambios)
+    // esta es la definición de las propiedades de la clase ProgramaSoftware
     public int Id { get; set; } 
     // EL get y set se usan para acceder y modificar las propiedades del objeto
     //funcionan como métodos especiales que permiten obtener (get) y asignar (set) 
@@ -48,6 +49,9 @@ public class ProgramaSoftware
     }
 
     public override string ToString() 
+    // el publico override indica que este método reemplaza
+    // una implementación heredada de la clase base (en este caso, Object).
+    //en simples palabras, ToString es un método que 
     //sirve para devolver una representación en forma de cadena
     // del objeto ProgramaSoftware.
     // Esto es útil para mostrar información legible sobre el objeto
