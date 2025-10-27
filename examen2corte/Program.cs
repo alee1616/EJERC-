@@ -141,6 +141,7 @@ public class CatalogoSoftwareApp // Clase principal que maneja el catálogo de s
     //lo que indica si la eliminación fue exitosa o no.
     // Método para eliminar un programa por su ID. 
     // Devuelve true si se eliminó, false si no se encontró.
+    // en simples palabras, este método busca un programa por su ID y lo elimina si lo encuentra.
     {
         var programaAEliminar = catalogo.Find(p => p.Id == id);
         // Busca el programa con el ID especificado
