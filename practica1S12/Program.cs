@@ -102,3 +102,6 @@ namespace ListaSimple
 // Esto la hace ideal para aplicaciones donde la cantidad de datos puede variar frecuentemente.
 
 // la recursividad es una técnica de programación donde una función se llama a sí misma para resolver un problema.
+// Se utiliza comúnmente para problemas que pueden dividirse en subproblemas más pequeños y similares al problema original,
+// como el cálculo de factoriales, la generación de secuencias, y la exploración 
+// de estructuras de datos como árboles y listas enlazadas.
