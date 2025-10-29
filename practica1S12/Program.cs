@@ -100,3 +100,5 @@ namespace ListaSimple
 // La lista enlazada simple permite almacenar elementos de manera dinámica,
 // facilitando inserciones y eliminaciones sin necesidad de reestructurar toda la lista.    
 // Esto la hace ideal para aplicaciones donde la cantidad de datos puede variar frecuentemente.
+
+// la recursividad es una técnica de programación donde una función se llama a sí misma para resolver un problema.
