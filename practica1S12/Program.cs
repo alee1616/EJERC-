@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq; 
+using System.Linq;
 
 namespace ListaSimple
 {
@@ -35,7 +35,7 @@ namespace ListaSimple
                         string elementoAgregar = Console.ReadLine();
 
                         // Usamos el método Add() para insertar el elemento.
-                        lista.Add(elementoAgregar); 
+                        lista.Add(elementoAgregar);
                         Console.WriteLine($"'{elementoAgregar}' agregado a la lista.");
                         break;
 
@@ -95,3 +95,8 @@ namespace ListaSimple
         }
     }
 }
+
+// Los nodos estan conformados por dos partes; el dato y la referencia al siguiente nodo.
+// La lista enlazada simple permite almacenar elementos de manera dinámica,
+// facilitando inserciones y eliminaciones sin necesidad de reestructurar toda la lista.    
+// Esto la hace ideal para aplicaciones donde la cantidad de datos puede variar frecuentemente.
