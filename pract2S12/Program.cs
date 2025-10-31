@@ -10,7 +10,7 @@ class Nodo
 
     public Nodo Izquierdo, Derecho;
 
-
+    
 
     public Nodo(int valor)
 
