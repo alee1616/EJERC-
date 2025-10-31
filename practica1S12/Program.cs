@@ -105,3 +105,9 @@ namespace ListaSimple
 // Se utiliza comúnmente para problemas que pueden dividirse en subproblemas más pequeños y similares al problema original,
 // como el cálculo de factoriales, la generación de secuencias, y la exploración 
 // de estructuras de datos como árboles y listas enlazadas.
+
+//un arbol binario de busqueda es una estructura de datos en la que cada nodo tiene como máximo dos hijos,
+// y para cada nodo, todos los valores en el subárbol izquierdo son menores que el valor del nodo,
+// y todos los valores en el subárbol derecho son mayores. Esto permite búsquedas, inserciones y eliminaciones eficientes.
+// Los árboles binarios de búsqueda son ampliamente utilizados en aplicaciones que requieren acceso rápido a datos ordenados,
+// como bases de datos y sistemas de archivos.  
