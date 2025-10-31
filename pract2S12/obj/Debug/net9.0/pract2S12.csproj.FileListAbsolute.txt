@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\EJERC#\pract2S12\bin\Debug\net9.0\pract2S12.exe
+C:\Users\User\OneDrive\EJERC#\pract2S12\bin\Debug\net9.0\pract2S12.deps.json
+C:\Users\User\OneDrive\EJERC#\pract2S12\bin\Debug\net9.0\pract2S12.runtimeconfig.json
+C:\Users\User\OneDrive\EJERC#\pract2S12\bin\Debug\net9.0\pract2S12.dll
+C:\Users\User\OneDrive\EJERC#\pract2S12\bin\Debug\net9.0\pract2S12.pdb
+C:\Users\User\OneDrive\EJERC#\pract2S12\obj\Debug\net9.0\pract2S12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\EJERC#\pract2S12\obj\Debug\net9.0\pract2S12.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\EJERC#\pract2S12\obj\Debug\net9.0\pract2S12.AssemblyInfo.cs
+C:\Users\User\OneDrive\EJERC#\pract2S12\obj\Debug\net9.0\pract2S12.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\EJERC#\pract2S12\obj\Debug\net9.0\pract2S12.sourcelink.json
+C:\Users\User\OneDrive\EJERC#\pract2S12\obj\Debug\net9.0\pract2S12.dll
+C:\Users\User\OneDrive\EJERC#\pract2S12\obj\Debug\net9.0\refint\pract2S12.dll
+C:\Users\User\OneDrive\EJERC#\pract2S12\obj\Debug\net9.0\pract2S12.pdb
+C:\Users\User\OneDrive\EJERC#\pract2S12\obj\Debug\net9.0\pract2S12.genruntimeconfig.cache
+C:\Users\User\OneDrive\EJERC#\pract2S12\obj\Debug\net9.0\ref\pract2S12.dll

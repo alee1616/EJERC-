@@ -233,7 +233,7 @@ class Program
         // -------------------------------------------------------------
         // Presentación de la Aplicación en Consola
         // -------------------------------------------------------------
-        Console.ForegroundColor = ConsoleColor.Cyan;
+      
         Console.WriteLine("==================================================");
         Console.WriteLine("  ÁRBOL BINARIO DE BÚSQUEDA (BST) - TAREA UAM");
         Console.WriteLine("==================================================");
@@ -251,7 +251,6 @@ class Program
         }
         
         // --- PRUEBA DE RECORRIDOS ---
-        Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("\n--------------------------------------------------");
         Console.WriteLine("  2. PRUEBA DE RECORRIDOS");
         Console.WriteLine("--------------------------------------------------");
@@ -268,7 +267,6 @@ class Program
         Console.WriteLine();
         
         // --- PRUEBA DE BÚSQUEDA ---
-        Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("\n--------------------------------------------------");
         Console.WriteLine("  3. PRUEBA DE BÚSQUEDA");
         Console.WriteLine("--------------------------------------------------");
@@ -281,7 +279,6 @@ class Program
         Console.WriteLine($"   - Buscando el valor {valorABuscar}: {(arbol.Buscar(valorABuscar) ? "ENCONTRADO" : "NO ENCONTRADO")}");
 
         // --- PRUEBA DE ELIMINACIÓN ---
-        Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("\n--------------------------------------------------");
         Console.WriteLine("  4. PRUEBA DE ELIMINACIÓN");
         Console.WriteLine("--------------------------------------------------");
@@ -302,13 +299,12 @@ class Program
         Console.WriteLine();
 
         // --- PRUEBA DE VALIDACIÓN ---
-        Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("\n--------------------------------------------------");
         Console.WriteLine("  5. PRUEBA DE VALIDACIÓN");
         Console.WriteLine("--------------------------------------------------");
         Console.ResetColor();
         
-        // El árbol actual es un BST válido
+        // El árbol actual es un BST válido, BTS significa Binary Search Tree
         Console.WriteLine($"   - ¿Es un BST válido? : {(arbol.EsArbolBinarioBusqueda() ? "SÍ (Correcto)" : "NO (Incorrecto)")}");
         
         Console.WriteLine("\n==================================================");
