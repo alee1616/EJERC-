@@ -61,16 +61,16 @@ class ArbolBinarioBusqueda
     // Método público para buscar un valor en el árbol
     public bool Buscar(int valor)
     {
-        return BuscarRecursivo(Raiz, valor);
+        return BuscarRecursivo(Raiz, valor); // en este caso, comenzamos desde la raíz y luego buscamos recursivamente 
     }
 
     // Método privado y recursivo para la búsqueda
     private bool BuscarRecursivo(Nodo raiz, int valor)
     {
         // Caso base 1: El árbol está vacío o llegamos a una hoja (no encontrado)
-        if (raiz == null)
+        if (raiz == null) // Si la raíz es nula, el valor no está en el árbol
         {
-            return false;
+            return false; // Valor no encontrado, entonces retornamos false
         }
 
         // Caso base 2: Encontramos el valor
@@ -83,26 +83,32 @@ class ArbolBinarioBusqueda
         if (valor < raiz.Valor)
         {
             // Buscar en el subárbol izquierdo
-            return BuscarRecursivo(raiz.Izquierdo, valor);
+            return BuscarRecursivo(raiz.Izquierdo, valor); // Llamada recursiva al subárbol izquierdo, entonces retornamos el resultado
         }
         else
         {
             // Buscar en el subárbol derecho
-            return BuscarRecursivo(raiz.Derecho, valor);
+            return BuscarRecursivo(raiz.Derecho, valor); // Llamada recursiva al subárbol derecho, entonces retornamos el resultado
         }
     }
 
     // Método público para iniciar la eliminación de un valor
-    public void Eliminar(int valor)
+    public void Eliminar(int valor) // Inicia la eliminación desde la raíz usamos la función EliminarRecursivo
     {
         Raiz = EliminarRecursivo(Raiz, valor);
     }
 
     // Método privado y recursivo para la eliminación
-    private Nodo EliminarRecursivo(Nodo raiz, int valor)
+    private Nodo EliminarRecursivo(Nodo raiz, int valor) 
+    // Elimina un nodo con el valor dado y devuelve la nueva raíz del subárbol
+    //El caso que se presenta en lo de eliminar un nodo en un árbol binario de búsqueda (BST) 
+    // puede dividirse en tres situaciones principales:
+    // 1. El nodo a eliminar es una hoja (no tiene hijos).
+    // 2. El nodo a eliminar tiene un solo hijo.
+    // 3. El nodo a eliminar tiene dos hijos.
     {
         // Caso 1: El árbol está vacío o el valor no existe
-        if (raiz == null)
+        if (raiz == null) // Si la raíz es nula, simplemente retornamos nulo
         {
             return raiz;
         }
@@ -120,9 +126,10 @@ class ArbolBinarioBusqueda
         else
         {
             // Caso A: Nodo con un solo hijo o sin hijos
-            if (raiz.Izquierdo == null)
+            if (raiz.Izquierdo == null) // Si no tiene hijo izquierdo entonces en este caso 
+            // se elimina el nodo y se retorna su hijo derecho
             {
-                return raiz.Derecho; // Retornamos el hijo derecho (o null si no hay)
+                return raiz.Derecho; // Retornamos el hijo derecho (o null si no hay) 
             }
             else if (raiz.Derecho == null)
             {
