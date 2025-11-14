@@ -119,7 +119,7 @@ public class Nodo
         }
     }
 
-public class Program
+public class Program // esta es la clase principal del programa
 {
     // Función para solicitar datos de entrada y construir el árbol.
     static ArbolBinario SolicitarYConstruirArbol()
@@ -181,4 +181,5 @@ public class Program
         Console.ReadKey();
     }
 }
+
     
