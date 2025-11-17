@@ -1,0 +1,11 @@
+C:\Users\jesyg\source\repos\formsenla\bin\Debug\formsenla.exe.config
+C:\Users\jesyg\source\repos\formsenla\bin\Debug\formsenla.exe
+C:\Users\jesyg\source\repos\formsenla\bin\Debug\formsenla.pdb
+C:\Users\jesyg\source\repos\formsenla\obj\Debug\formsenla.csproj.AssemblyReference.cache
+C:\Users\jesyg\source\repos\formsenla\obj\Debug\formsenla.Form1.resources
+C:\Users\jesyg\source\repos\formsenla\obj\Debug\formsenla.Properties.Resources.resources
+C:\Users\jesyg\source\repos\formsenla\obj\Debug\formsenla.csproj.GenerateResource.cache
+C:\Users\jesyg\source\repos\formsenla\obj\Debug\formsenla.csproj.CoreCompileInputs.cache
+C:\Users\jesyg\source\repos\formsenla\obj\Debug\formsenla.exe
+C:\Users\jesyg\source\repos\formsenla\obj\Debug\formsenla.pdb
+C:\Users\jesyg\source\repos\formsenla\obj\Debug\formsenla.exe.config
